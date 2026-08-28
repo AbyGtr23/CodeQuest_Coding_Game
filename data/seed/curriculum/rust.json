@@ -1,0 +1,590 @@
+{
+  "toolSlug": "rust",
+  "stages": [
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 1,
+      "title": "RUST Stage 1",
+      "questName": "Quest 1",
+      "lessonContentMd": "## RUST Stage 1\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 1. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 2,
+      "title": "RUST Stage 2",
+      "questName": "Quest 2",
+      "lessonContentMd": "## RUST Stage 2\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 2. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 3,
+      "title": "RUST Stage 3",
+      "questName": "Quest 3",
+      "lessonContentMd": "## RUST Stage 3\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 3. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 4,
+      "title": "RUST Stage 4",
+      "questName": "Quest 4",
+      "lessonContentMd": "## RUST Stage 4\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 4. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 5,
+      "title": "RUST Stage 5",
+      "questName": "Quest 5",
+      "lessonContentMd": "## RUST Stage 5\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 5. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 6,
+      "title": "RUST Stage 6",
+      "questName": "Quest 6",
+      "lessonContentMd": "## RUST Stage 6\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 6. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 7,
+      "title": "RUST Stage 7",
+      "questName": "Quest 7",
+      "lessonContentMd": "## RUST Stage 7\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 7. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 8,
+      "title": "RUST Stage 8",
+      "questName": "Quest 8",
+      "lessonContentMd": "## RUST Stage 8\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 8. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 9,
+      "title": "RUST Stage 9",
+      "questName": "Quest 9",
+      "lessonContentMd": "## RUST Stage 9\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 9. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 10,
+      "title": "RUST Stage 10",
+      "questName": "Quest 10",
+      "lessonContentMd": "## RUST Stage 10\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 10. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 11,
+      "title": "RUST Stage 11",
+      "questName": "Quest 11",
+      "lessonContentMd": "## RUST Stage 11\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 11. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 12,
+      "title": "RUST Stage 12",
+      "questName": "Quest 12",
+      "lessonContentMd": "## RUST Stage 12\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 12. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 13,
+      "title": "RUST Stage 13",
+      "questName": "Quest 13",
+      "lessonContentMd": "## RUST Stage 13\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 13. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 14,
+      "title": "RUST Stage 14",
+      "questName": "Quest 14",
+      "lessonContentMd": "## RUST Stage 14\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 14. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    },
+    {
+      "levelSlug": "cadet",
+      "stageNumber": 15,
+      "title": "RUST Stage 15",
+      "questName": "Quest 15",
+      "lessonContentMd": "## RUST Stage 15\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
+      "problemStatementMd": "Solve the problem for stage 15. Output the expected result.",
+      "starterCode": "// Write your code here\n",
+      "solutionCode": "// Solution\nprint('Hello')",
+      "exerciseType": "coding-challenge",
+      "languageId": "63",
+      "xpReward": 50,
+      "testCases": [
+        {
+          "testNumber": 1,
+          "input": "1",
+          "expectedOutput": "1",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
+          "input": "2",
+          "expectedOutput": "2",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 3,
+          "input": "3",
+          "expectedOutput": "3",
+          "isHidden": true,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        }
+      ]
+    }
+  ]
+}

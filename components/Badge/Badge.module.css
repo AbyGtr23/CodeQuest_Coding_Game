@@ -1,0 +1,53 @@
+.badgeCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--text-secondary);
+  border-radius: var(--radius-md);
+  transition: all 0.2s ease;
+}
+
+.icon {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-tertiary);
+  border-radius: 50%;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.name {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  color: var(--text-primary);
+}
+
+.description {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.earned {
+  border-color: var(--accent-cyan);
+}
+.earned .icon {
+  box-shadow: var(--glow);
+}
+
+.locked {
+  filter: grayscale(1);
+  opacity: 0.6;
+}

@@ -1,0 +1,126 @@
+.catalog {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-bottom: 4rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  color: var(--accent-purple);
+  font-size: 1.5rem;
+}
+
+.slotsCounter {
+  font-family: var(--font-mono);
+  background: var(--bg-secondary);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--bg-tertiary);
+  font-size: 0.9rem;
+}
+
+.open { color: var(--accent-green); }
+.full { color: var(--accent-red); }
+
+.warningAlert {
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--accent-red);
+  color: var(--accent-red);
+  padding: 1rem;
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+.categorySection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categoryTitle {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.toolCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.toolCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--text-secondary);
+}
+
+.toolCard.active {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.1);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.cardHeader h3 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+}
+
+.activeBadge {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  font-weight: bold;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  flex-grow: 1;
+}
+
+.cardFooter {
+  margin-top: auto;
+}
+
+.selectBtn {
+  width: 100%;
+  border-color: var(--text-secondary);
+  color: var(--text-secondary);
+}
+
+.selectBtn:hover {
+  background: var(--text-secondary);
+  color: var(--bg-primary);
+  border-color: var(--text-secondary);
+  box-shadow: none;
+}
+
+.resumeBtn {
+  width: 100%;
+}

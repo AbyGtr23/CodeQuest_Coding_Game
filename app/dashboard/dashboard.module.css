@@ -1,0 +1,227 @@
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid var(--bg-tertiary);
+  padding-bottom: 1rem;
+}
+
+.welcome h1 {
+  color: var(--accent-cyan);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.rank {
+  color: var(--accent-purple);
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.stats {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.statBox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.statLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.25rem;
+}
+
+.statValue {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent-green);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.activeQuests h2, .activityFeed h2 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.toolCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 1.5rem;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.toolCard h3 {
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+}
+
+.progressContainer {
+  background: var(--bg-primary);
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progressBar {
+  background: var(--accent-green);
+  height: 100%;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.resumeBtn {
+  margin-top: auto;
+  text-align: center;
+  display: block;
+  background: transparent;
+  border: 1px solid var(--accent-cyan);
+  color: var(--accent-cyan);
+  padding: 0.75rem;
+  font-family: var(--font-mono);
+  transition: all 0.2s ease;
+}
+
+.resumeBtn:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+}
+
+.addToolCard {
+  border: 1px dashed var(--text-secondary);
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBtn {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  text-align: center;
+}
+
+.addBtn:hover {
+  color: var(--accent-cyan);
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  background: var(--bg-secondary);
+  border: 1px dashed var(--bg-tertiary);
+  padding: 3rem;
+  text-align: center;
+  font-family: var(--font-mono);
+}
+
+.browseBtn {
+  display: inline-block;
+  margin-top: 1rem;
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green);
+  padding: 0.5rem 1rem;
+}
+
+.browseBtn:hover {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
+
+.activityList {
+  list-style: none;
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.activityItem {
+  padding: 1rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.date {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.action {
+  font-size: 0.9rem;
+}
+
+.xp {
+  font-family: var(--font-mono);
+  color: var(--accent-green);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.emptyActivity {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .toolsGrid {
+    grid-template-columns: 1fr;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-family: var(--font-mono);
+}
+
+.label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.blocks {
+  letter-spacing: -2px;
+}
+
+.percentage {
+  font-size: 0.875rem;
+}
+
+.cyan {
+  color: var(--accent-cyan);
+}
+.cyan .blocks {
+  color: var(--accent-cyan);
+}
+
+.green {
+  color: var(--accent-green);
+}
+.green .blocks {
+  color: var(--accent-green);
+}
+
+.amber {
+  color: var(--accent-amber);
+}
+.amber .blocks {
+  color: var(--accent-amber);
+}
+
+.sm {
+  font-size: 0.75rem;
+}
+.md {
+  font-size: 1rem;
+}
+.lg {
+  font-size: 1.25rem;
+}

@@ -1,69 +1,68 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import styles from './page.module.css';
+import Link from 'next/link';
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className={styles.intro}>
-          <h1>
-            To get started, edit the{" "}
-            <code className={styles.code}>page.js</code> file.
-          </h1>
-          <p>
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <div className={styles.landing}>
+      <header className={styles.hero}>
+        <h1 className={styles.title}>
+          <span className={styles.typing}>&gt; LEVEL UP YOUR CODE_</span>
+        </h1>
+        <p className={styles.subtitle}>&gt; CONQUER THE STACK_</p>
+        <div className={styles.ctaWrapper}>
+          <Link href="/auth/signup" className={styles.ctaButton}>
+            [BEGIN YOUR QUEST &rarr;]
+          </Link>
         </div>
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </header>
+
+      <section className={styles.showcase}>
+        <h2 className={styles.sectionTitle}>FEATURED TOOLS</h2>
+        <div className={styles.grid}>
+          <div className={styles.card}>
+            <h3>Python</h3>
+            <p>Master data structures, algorithms, and scripting.</p>
+          </div>
+          <div className={styles.card}>
+            <h3>JavaScript</h3>
+            <p>Conquer the web with modern ES6+.</p>
+          </div>
+          <div className={styles.card}>
+            <h3>Docker</h3>
+            <p>Containerize your applications like a pro.</p>
+          </div>
         </div>
-      </main>
+      </section>
+
+      <section className={styles.howItWorks}>
+        <h2 className={styles.sectionTitle}>HOW IT WORKS</h2>
+        <ol className={styles.steps}>
+          <li>
+            <div className={styles.icon}>⚔️</div>
+            <p>Choose your weapons (tools)</p>
+          </li>
+          <li>
+            <div className={styles.icon}>🗺️</div>
+            <p>Follow the quest map</p>
+          </li>
+          <li>
+            <div className={styles.icon}>💻</div>
+            <p>Write code to solve challenges</p>
+          </li>
+          <li>
+            <div className={styles.icon}>📈</div>
+            <p>Earn XP and rank up</p>
+          </li>
+          <li>
+            <div className={styles.icon}>🏆</div>
+            <p>Climb the leaderboard</p>
+          </li>
+        </ol>
+      </section>
+
+      <footer className={styles.footer}>
+        <p>Built for devs who dare to quest.</p>
+      </footer>
     </div>
   );
 }

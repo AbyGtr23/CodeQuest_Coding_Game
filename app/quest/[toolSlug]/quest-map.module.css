@@ -1,0 +1,195 @@
+.questMap {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.backLink {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.titleInfo h1 {
+  color: var(--accent-cyan);
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.progressSection {
+  width: 100%;
+}
+
+.progressText {
+  font-family: var(--font-mono);
+  margin-bottom: 0.5rem;
+}
+
+.progressTrack {
+  height: 12px;
+  background: var(--bg-primary);
+  border-radius: 6px;
+  overflow: hidden;
+  border: 1px solid var(--bg-tertiary);
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--accent-cyan);
+  transition: width 0.5s ease;
+}
+
+.mapContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 1rem 0;
+}
+
+.levelSection {
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 2rem;
+  position: relative;
+}
+
+.completedLevel {
+  border-color: var(--accent-green);
+}
+
+.lockedLevel {
+  opacity: 0.6;
+}
+
+.levelTitle {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completedLevel .levelTitle {
+  color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.levelBadge {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  padding: 0.2rem 0.5rem;
+  background: var(--bg-tertiary);
+}
+
+.completedLevel .levelBadge {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
+
+.nodesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.nodeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.nodeConnector {
+  width: 2px;
+  height: 40px;
+  background: var(--bg-tertiary);
+  margin: 0.5rem 0;
+}
+
+.connectorActive {
+  background: var(--accent-cyan);
+}
+
+.stageNode {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  background: var(--bg-secondary);
+  border: 2px solid var(--bg-tertiary);
+  padding: 1rem;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.nodeCompleted {
+  border-color: var(--accent-green);
+  background: rgba(34, 197, 94, 0.05);
+}
+
+.nodeCurrent {
+  border-color: var(--accent-amber);
+  background: rgba(245, 158, 11, 0.05);
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.2);
+}
+
+.nodeCurrent:hover {
+  transform: scale(1.02);
+  border-color: var(--accent-cyan);
+}
+
+.nodeLocked {
+  border-color: var(--bg-tertiary);
+  cursor: not-allowed;
+}
+
+.nodeIcon {
+  font-size: 1.5rem;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.nodeCompleted .nodeIcon { color: var(--accent-green); }
+.nodeCurrent .nodeIcon { color: var(--accent-amber); }
+.nodeLocked .nodeIcon { color: var(--text-secondary); font-size: 1.2rem; }
+
+.nodeInfo {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.stageNum {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.stageName {
+  font-weight: bold;
+}
+
+.nodeXp {
+  font-family: var(--font-mono);
+  color: var(--accent-purple);
+  font-size: 0.9rem;
+}

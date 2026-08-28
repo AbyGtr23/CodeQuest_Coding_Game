@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 70vh;
+}
+
+.terminal {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  background: var(--bg-tertiary);
+  padding: 0.5rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid #334155;
+}
+
+.body {
+  padding: 2rem;
+}
+
+.body h2 {
+  color: var(--accent-green);
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.inputGroup label {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.input {
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-green);
+}
+
+.button {
+  background: transparent;
+  border: 1px solid var(--accent-green);
+  color: var(--accent-green);
+  padding: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.button:hover {
+  background: var(--accent-green);
+  color: var(--bg-primary);
+}
+
+.error {
+  color: var(--accent-red);
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--accent-red);
+  padding: 0.5rem;
+}
+
+.divider {
+  text-align: center;
+  margin: 1.5rem 0;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+}
+
+.githubButton {
+  width: 100%;
+  background: transparent;
+  border: 1px solid var(--text-primary);
+  color: var(--text-primary);
+  padding: 0.75rem;
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+}
+
+.githubButton:hover {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+}
+
+.footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+}

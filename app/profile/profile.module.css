@@ -1,0 +1,196 @@
+.profilePage {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.heroCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-cyan);
+  border-radius: 8px;
+  padding: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(6, 182, 212, 0.1);
+}
+
+.avatarSection {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: var(--bg-tertiary);
+  border: 2px solid var(--accent-cyan);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--accent-cyan);
+}
+
+.userInfo h1 {
+  font-size: 2rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.rankBadge {
+  display: inline-block;
+  background: rgba(168, 85, 247, 0.2);
+  color: var(--accent-purple);
+  border: 1px solid var(--accent-purple);
+  padding: 0.25rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.heroStats {
+  display: flex;
+  gap: 3rem;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.statLabel {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--accent-green);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.toolProgress, .detailedStats {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.toolsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.toolItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.toolHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toolHeader h3 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.percent {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.progressTrack {
+  height: 8px;
+  background: var(--bg-primary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressBar {
+  height: 100%;
+  background: var(--accent-cyan);
+}
+
+.mastered {
+  background: var(--accent-purple);
+  box-shadow: 0 0 10px var(--accent-purple);
+}
+
+.emptyText {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.statBox {
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.statName {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.statNum {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent-amber);
+}
+
+@media (max-width: 900px) {
+  .heroCard {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+  .heroStats {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .stat {
+    align-items: flex-start;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

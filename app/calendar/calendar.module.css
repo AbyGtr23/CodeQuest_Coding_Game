@@ -1,0 +1,113 @@
+.calendarPage {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1rem;
+}
+
+.header h1 {
+  color: var(--accent-purple);
+  font-size: 1.5rem;
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.statBox {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.statLabel {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.statValue {
+  font-family: var(--font-display);
+  color: var(--accent-cyan);
+}
+
+.heatmapSection h2, .dayDetails h2 {
+  font-size: 1.2rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.heatmapWrapper {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.dayDetails {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.activityList {
+  list-style: none;
+}
+
+.activityItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.activityItem:last-child {
+  border-bottom: none;
+}
+
+.activityInfo {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.time {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  width: 100px;
+}
+
+.activityXp {
+  font-family: var(--font-mono);
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+.emptyActivity {
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}

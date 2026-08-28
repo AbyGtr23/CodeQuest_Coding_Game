@@ -1,0 +1,3 @@
+[
+  { "id": "f6666666-6666-6666-6666-666666666666", "slug": "first_blood", "name": "First Blood", "description": "First stage done", "icon": "🩸", "condition_type": "stages", "condition_value": 1 }
+]

@@ -1,0 +1,55 @@
+.node {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--text-secondary);
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.node:not(.locked):hover {
+  transform: translateX(4px);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.stageNumber {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.name {
+  font-weight: bold;
+  color: var(--text-primary);
+}
+
+.completed {
+  border-color: var(--accent-green);
+}
+.completed .name {
+  color: var(--accent-green);
+}
+
+.in-progress, .active {
+  border-color: var(--accent-amber);
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.2);
+}
+
+.locked {
+  opacity: 0.5;
+  filter: grayscale(1);
+  cursor: not-allowed;
+  background: var(--bg-primary);
+}
