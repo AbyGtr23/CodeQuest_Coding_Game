@@ -31,16 +31,30 @@ export function AuthProvider({ children }) {
 
     let mounted = true;
 
+    async function fetchProfileWithRetry(userId) {
+      let retryCount = 0;
+      let userProfile = null;
+      while (retryCount < 3 && !userProfile) {
+        const { data } = await supabase
+          .from('users')
+          .select('*')
+          .eq('id', userId)
+          .single();
+        userProfile = data;
+        if (!userProfile) {
+          retryCount++;
+          if (retryCount < 3) await new Promise(r => setTimeout(r, 500));
+        }
+      }
+      return userProfile;
+    }
+
     async function fetchSession() {
       try {
         const { data: { session } } = await supabase.auth.getSession();
         if (session?.user && mounted) {
           setUser(session.user);
-          const { data: userProfile } = await supabase
-            .from('users')
-            .select('*')
-            .eq('id', session.user.id)
-            .single();
+          const userProfile = await fetchProfileWithRetry(session.user.id);
           if (mounted) setProfile(userProfile);
         }
       } catch (err) {
@@ -54,11 +68,7 @@ export function AuthProvider({ children }) {
     const { data: { subscription } } = supabase.auth.onAuthStateChange(async (event, session) => {
       if (session?.user) {
         setUser(session.user);
-        const { data: userProfile } = await supabase
-          .from('users')
-          .select('*')
-          .eq('id', session.user.id)
-          .single();
+        const userProfile = await fetchProfileWithRetry(session.user.id);
         setProfile(userProfile);
       } else {
         setUser(null);

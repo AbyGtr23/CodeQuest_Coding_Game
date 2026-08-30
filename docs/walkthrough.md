@@ -132,6 +132,7 @@ Each component follows the pattern: `ComponentName/ComponentName.js` + `Componen
 2. `002_create_rls_policies.sql` — Row-Level Security policies
 3. `003_create_indexes.sql` — Performance indexes
 4. `004_create_triggers.sql` — Max 2 active tools trigger
+5. `005_create_user_profile_trigger.sql` — Auto user profile synchronization trigger from auth.users to public.users
 
 ### Seed Data
 

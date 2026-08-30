@@ -12,22 +12,20 @@ export async function GET(request) {
   const url = new URL(request.url);
   const limit = url.searchParams.get('limit');
 
-  // Get activity from last 365 days
   const oneYearAgo = new Date();
   oneYearAgo.setFullYear(oneYearAgo.getFullYear() - 1);
 
   let query = supabase
     .from('daily_activity')
     .select(`
-      id,
-      date,
+      activity_date,
+      stages_completed,
       xp_earned,
-      stage_id,
-      stages (name)
+      submissions_count
     `)
     .eq('user_id', user.id)
-    .gte('date', oneYearAgo.toISOString().split('T')[0])
-    .order('date', { ascending: false });
+    .gte('activity_date', oneYearAgo.toISOString().split('T')[0])
+    .order('activity_date', { ascending: false });
     
   if (limit) {
     query = query.limit(parseInt(limit));
@@ -40,10 +38,10 @@ export async function GET(request) {
   }
 
   const formattedData = data.map(d => ({
-    date: d.date,
+    date: d.activity_date,
+    stages_completed: d.stages_completed,
     xp_earned: d.xp_earned,
-    stage_id: d.stage_id,
-    stage_name: d.stages?.name || `Stage ${d.stage_id}`
+    submissions_count: d.submissions_count
   }));
 
   return NextResponse.json(formattedData);

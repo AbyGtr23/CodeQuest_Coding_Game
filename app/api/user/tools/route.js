@@ -18,15 +18,16 @@ export async function GET() {
     return NextResponse.json({ error: error.message }, { status: 500 });
   }
 
-  // Format response
   const formattedTools = userTools.map(ut => ({
     id: ut.tool_id,
     name: ut.tools.name,
     slug: ut.tools.slug,
     description: ut.tools.description,
     category: ut.tools.category,
-    progress: ut.progress,
-    mastered: ut.mastered
+    icon_emoji: ut.tools.icon_emoji,
+    progress: ut.progress_pct,
+    status: ut.status,
+    mastered: ut.status === 'mastered'
   }));
 
   return NextResponse.json(formattedTools);
@@ -46,12 +47,11 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Tool ID is required' }, { status: 400 });
   }
 
-  // Check how many active tools user has
   const { data: activeTools, error: countError } = await supabase
     .from('user_tools')
     .select('id')
     .eq('user_id', user.id)
-    .eq('mastered', false);
+    .eq('status', 'active');
 
   if (countError) {
     return NextResponse.json({ error: countError.message }, { status: 500 });
@@ -61,16 +61,15 @@ export async function POST(request) {
     return NextResponse.json({ error: 'Maximum of 2 active tools allowed' }, { status: 400 });
   }
 
-  // Insert new tool
   const { error: insertError } = await supabase
     .from('user_tools')
     .insert([
-      { user_id: user.id, tool_id: toolId }
+      { user_id: user.id, tool_id: toolId, status: 'active', progress_pct: 0 }
     ]);
 
   if (insertError) {
-    if (insertError.code === '23505') { // Unique violation
-      return NextResponse.json({ error: 'Tool already selected' }, { status: 400 });
+    if (insertError.code === '23505' || insertError.code === 'P0001') { 
+      return NextResponse.json({ error: 'Tool already selected or max active tools reached' }, { status: 400 });
     }
     return NextResponse.json({ error: insertError.message }, { status: 500 });
   }

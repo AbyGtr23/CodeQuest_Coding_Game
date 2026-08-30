@@ -16,8 +16,8 @@ export default function StageNode({ stage, status, onClick, isActive }) {
     >
       <div className={styles.icon}>{getIcon()}</div>
       <div className={styles.content}>
-        <div className={styles.stageNumber}>Stage {stage.order}</div>
-        <div className={styles.name}>{stage.name}</div>
+        <div className={styles.stageNumber}>Stage {stage.stage_number}</div>
+        <div className={styles.name}>{stage.title}</div>
       </div>
     </div>
   );

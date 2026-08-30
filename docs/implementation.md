@@ -9,7 +9,7 @@ A full-stack, gamified developer education platform where learners embark on RPG
 | Phase | Status | Details |
 |-------|--------|---------|
 | Phase 1: Project Init | ✅ Complete | Next.js 16.3.1, all dependencies installed |
-| Phase 2: Database | ✅ Complete | 4 SQL migrations, seed data, curriculum scripts |
+| Phase 2: Database | ✅ Complete | 5 SQL migrations, seed data, curriculum scripts |
 | Phase 3: Authentication | ✅ Complete | Supabase SSR auth, middleware, login/signup pages |
 | Phase 4: API Routes | ✅ Complete | 10 API routes (tools, quest, submit, run, calendar, profile, leaderboard) |
 | Phase 5: Components | ✅ Complete | 10 components (Navbar, CodeEditor, ProgressBar, etc.) |

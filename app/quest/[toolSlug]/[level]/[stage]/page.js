@@ -7,6 +7,8 @@ import styles from './stage.module.css';
 import CodeEditor from '@/components/CodeEditor/CodeEditor';
 import TestResults from '@/components/TestResults/TestResults';
 import RankUpModal from '@/components/RankUpModal/RankUpModal';
+import LessonPanel from '@/components/LessonPanel/LessonPanel';
+import ReactMarkdown from 'react-markdown';
 
 export default function QuestStage() {
   const { toolSlug, level, stage } = useParams();
@@ -43,11 +45,11 @@ export default function QuestStage() {
           sourceCode, 
           languageId: stageData.language_id,
           // Just running the first test case to see output
-          stdin: stageData.test_cases?.[0]?.input_data || ''
+          stdin: stageData.test_cases?.[0]?.input || ''
         })
       });
       const result = await res.json();
-      setTestResults({ type: 'run', data: result });
+      setTestResults({ type: 'run', ...result });
     } catch (err) {
       console.error(err);
     } finally {
@@ -69,10 +71,10 @@ export default function QuestStage() {
         })
       });
       const result = await res.json();
-      setTestResults({ type: 'submit', data: result });
+      setTestResults({ type: 'submit', ...result });
 
       if (result.success) {
-        if (result.levelCompleted) {
+        if (result.rankUp) {
           setShowRankUp(true);
         } else {
           // Could show a success toast here
@@ -88,7 +90,7 @@ export default function QuestStage() {
   const handleNextStage = () => {
     setShowRankUp(false);
     if (stageData.next_stage) {
-      router.push(`/quest/${toolSlug}/${stageData.next_stage.level}/${stageData.next_stage.order}`);
+      router.push(`/quest/${toolSlug}/${stageData.next_stage.level_slug}/${stageData.next_stage.stage_number}`);
     } else {
       router.push(`/quest/${toolSlug}`);
     }
@@ -99,7 +101,7 @@ export default function QuestStage() {
   return (
     <div className={styles.stageContainer}>
       <div className={styles.breadcrumb}>
-        <Link href={`/quest/${toolSlug}`}>{toolSlug.toUpperCase()}</Link> &gt; LEVEL {level} &gt; {stageData.name}
+        <Link href={`/quest/${toolSlug}`}>{toolSlug.toUpperCase()}</Link> &gt; {stageData.level_slug?.toUpperCase()} &gt; {stageData.title}
       </div>
 
       <div className={styles.tabs}>
@@ -128,15 +130,17 @@ export default function QuestStage() {
           <div className={styles.lessonView}>
             <div className={styles.lessonPanel}>
               <h2>LESSON</h2>
-              <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: stageData.content.lesson }} />
+              <LessonPanel content={stageData.lesson_content_md} />
             </div>
             <div className={styles.problemPanel}>
               <h2>PROBLEM</h2>
-              <div className={styles.markdown} dangerouslySetInnerHTML={{ __html: stageData.content.problem }} />
+              <div className={styles.markdown}>
+                <ReactMarkdown>{stageData.problem_statement_md}</ReactMarkdown>
+              </div>
               <h3>Examples</h3>
               {stageData.test_cases?.filter(tc => !tc.is_hidden).map((tc, idx) => (
                 <div key={idx} className={styles.testCase}>
-                  <div><strong>Input:</strong> <code>{tc.input_data}</code></div>
+                  <div><strong>Input:</strong> <code>{tc.input}</code></div>
                   <div><strong>Output:</strong> <code>{tc.expected_output}</code></div>
                 </div>
               ))}
@@ -187,7 +191,7 @@ export default function QuestStage() {
         <RankUpModal 
           isOpen={showRankUp}
           onClose={handleNextStage}
-          newRank={{ name: level, emoji: '⬆️' }}
+          newRank={{ name: testResults?.newRank || 'Promoted', emoji: '⬆️' }}
           xpEarned={stageData?.xp_reward || 0}
         />
       )}

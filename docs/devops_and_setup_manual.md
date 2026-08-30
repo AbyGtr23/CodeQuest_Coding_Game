@@ -129,7 +129,13 @@ In the Supabase Dashboard, open the **SQL Editor** (terminal icon in left sideba
 3. Paste content and click **Run**.
 4. *Functionality*: Enforces the hard rule: **Maximum 2 active tool slots per user**.
 
-#### Migration 5: Reference Seed Data (`seed.sql`)
+#### Migration 5: User Profile Auto-Creation Trigger (`005_create_user_profile_trigger.sql`)
+1. Click **New query**.
+2. Open [`supabase/migrations/005_create_user_profile_trigger.sql`](file:///d:/Coder_Games/codequest/supabase/migrations/005_create_user_profile_trigger.sql).
+3. Paste content and click **Run**.
+4. *Functionality*: Automatically creates a corresponding row in `public.users` whenever a new user signs up in Supabase `auth.users`, resolving unique usernames from user metadata/email and linking avatars.
+
+#### Migration 6: Reference Seed Data (`seed.sql`)
 1. Click **New query**.
 2. Open [`supabase/seed.sql`](file:///d:/Coder_Games/codequest/supabase/seed.sql).
 3. Paste content and click **Run**.

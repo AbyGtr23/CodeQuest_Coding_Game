@@ -17,7 +17,7 @@ export async function POST(request) {
   }
 
   try {
-    const result = await submitCode(sourceCode, languageId, stdin || '');
+    const result = await submitCode({ sourceCode, languageId, stdin: stdin || '' });
     return NextResponse.json(result);
   } catch (err) {
     return NextResponse.json({ error: 'Execution service unavailable' }, { status: 503 });

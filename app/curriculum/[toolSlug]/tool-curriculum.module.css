@@ -1,0 +1,164 @@
+.toolCurriculum {
+  padding: 2rem 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1.5rem;
+}
+
+.backLink {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  font-size: 2.5rem;
+}
+
+.titleRow h1 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.metaBar {
+  display: flex;
+  gap: 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-green);
+  margin-top: 0.75rem;
+}
+
+.roadmap h2 {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+}
+
+.levelsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.levelCard {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.levelHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.levelBadge {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--bg-tertiary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.levelIndex {
+  font-family: var(--font-display);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+}
+
+.levelInfo h3 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+}
+
+.levelInfo h3 a {
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.levelInfo h3 a:hover {
+  color: var(--accent-cyan);
+}
+
+.levelMeta {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+.stageList {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stageLink {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.4rem 0.5rem;
+  border-radius: 3px;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: background 0.15s;
+}
+
+.stageLink:hover {
+  background: var(--bg-tertiary);
+}
+
+.stageNum {
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  min-width: 2rem;
+  font-size: 0.75rem;
+}
+
+.stageTitle {
+  flex: 1;
+}
+
+.stageXp {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent-amber);
+}
+
+.moreLink {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-cyan);
+  padding: 0.4rem 0.5rem;
+  text-decoration: none;
+}
+
+.moreLink:hover {
+  text-decoration: underline;
+}

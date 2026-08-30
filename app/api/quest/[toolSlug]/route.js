@@ -10,7 +10,6 @@ export async function GET(request, { params }) {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  // Get tool details
   const { data: tool, error: toolError } = await supabase
     .from('tools')
     .select('*')
@@ -21,67 +20,78 @@ export async function GET(request, { params }) {
     return NextResponse.json({ error: 'Tool not found' }, { status: 404 });
   }
 
-  // Get stages for this tool
-  const { data: stages, error: stagesError } = await supabase
+  const { data: levels } = await supabase
+    .from('levels')
+    .select('*')
+    .order('order_index');
+
+  const { data: stages } = await supabase
     .from('stages')
-    .select('id, level, order, name, xp_reward')
+    .select('*, levels!inner(*)')
     .eq('tool_id', tool.id)
-    .order('level')
-    .order('order');
+    .order('order_index', { referencedTable: 'levels' })
+    .order('stage_number');
 
-  if (stagesError) {
-    return NextResponse.json({ error: stagesError.message }, { status: 500 });
-  }
-
-  // Get user's progress for these stages
-  const { data: progress, error: progressError } = await supabase
+  const { data: progress } = await supabase
     .from('stage_progress')
     .select('stage_id, status')
-    .eq('user_id', user.id)
-    .in('stage_id', stages.map(s => s.id));
-
-  if (progressError) {
-    return NextResponse.json({ error: progressError.message }, { status: 500 });
-  }
+    .eq('user_id', user.id);
 
   const completedStageIds = new Set(
-    progress.filter(p => p.status === 'completed').map(p => p.stage_id)
+    progress?.filter(p => p.status === 'completed').map(p => p.stage_id) || []
   );
 
-  // Group by level
   const levelsMap = new Map();
-  
-  stages.forEach(stage => {
-    const levelNum = stage.level;
-    if (!levelsMap.has(levelNum)) {
-      levelsMap.set(levelNum, {
-        level: levelNum,
-        name: getLevelName(levelNum),
-        stages: []
-      });
-    }
-    
-    levelsMap.get(levelNum).stages.push({
-      ...stage,
-      completed: completedStageIds.has(stage.id)
+  levels?.forEach(level => {
+    levelsMap.set(level.id, {
+      slug: level.slug,
+      name: level.name,
+      display_name: level.display_name,
+      order_index: level.order_index,
+      stages: []
     });
   });
 
-  const levels = Array.from(levelsMap.values());
+  let previousLevelUnlocked = true;
+  let previousLevelStagesCompleted = true;
+
+  const levelsArray = Array.from(levelsMap.values()).sort((a, b) => a.order_index - b.order_index);
+  
+  for (const levelObj of levelsArray) {
+    const levelStages = stages?.filter(s => s.level_id === Array.from(levelsMap.entries()).find(([id, val]) => val.slug === levelObj.slug)[0]) || [];
+    
+    let isLevelUnlocked = previousLevelUnlocked && previousLevelStagesCompleted;
+    let allCompleted = true;
+    let previousStageCompleted = true;
+
+    for (const stage of levelStages) {
+      const isCompleted = completedStageIds.has(stage.id);
+      const isUnlocked = isLevelUnlocked && previousStageCompleted;
+
+      levelObj.stages.push({
+        id: stage.id,
+        stage_number: stage.stage_number,
+        title: stage.title,
+        quest_name: stage.quest_name,
+        xp_reward: stage.xp_reward,
+        completed: isCompleted,
+        unlocked: isUnlocked
+      });
+
+      if (!isCompleted) {
+        allCompleted = false;
+        previousStageCompleted = false;
+      } else {
+        previousStageCompleted = true;
+      }
+    }
+    
+    if (levelStages.length === 0) allCompleted = false;
+    previousLevelStagesCompleted = allCompleted;
+  }
 
   return NextResponse.json({
     tool,
-    levels
+    levels: levelsArray
   });
-}
-
-function getLevelName(level) {
-  const names = {
-    1: 'Cadet',
-    2: 'Apprentice',
-    3: 'Artisan',
-    4: 'Sorcerer',
-    5: 'Archmage'
-  };
-  return names[level] || `Level ${level}`;
 }

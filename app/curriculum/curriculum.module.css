@@ -1,0 +1,121 @@
+.curriculumPage {
+  padding: 2rem 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1.5rem;
+}
+
+.header h1 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--accent-cyan);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.statsBar {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-green);
+}
+
+.categorySection {
+  margin-bottom: 2.5rem;
+}
+
+.categoryTitle {
+  font-family: var(--font-display);
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.toolsGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.toolCard {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.2s ease;
+}
+
+.toolCard:hover {
+  border-color: var(--accent-cyan);
+  background: var(--bg-tertiary);
+}
+
+.toolIcon {
+  font-size: 2rem;
+  min-width: 3rem;
+  text-align: center;
+}
+
+.toolInfo {
+  flex: 1;
+}
+
+.toolInfo h3 {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.toolDesc {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+.toolMeta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+}
+
+.difficulty {
+  color: var(--accent-amber);
+}
+
+.stageCount {
+  color: var(--text-secondary);
+}
+
+.arrow {
+  font-size: 1.5rem;
+  color: var(--accent-cyan);
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .toolCard {
+    flex-wrap: wrap;
+  }
+  .toolMeta {
+    flex-wrap: wrap;
+  }
+}

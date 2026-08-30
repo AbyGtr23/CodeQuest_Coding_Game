@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { createBrowserClient } from '@supabase/ssr';
+import { createClient } from '@/lib/supabase/client';
 import { useAuth } from './useAuth';
 
 export function useQuestProgress(toolSlug) {
@@ -12,10 +12,7 @@ export function useQuestProgress(toolSlug) {
   const [progress, setProgress] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  const supabase = createBrowserClient(
-    process.env.NEXT_PUBLIC_SUPABASE_URL,
-    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
-  );
+  const supabase = createClient();
 
   useEffect(() => {
     if (!user || !toolSlug) return;
@@ -36,7 +33,7 @@ export function useQuestProgress(toolSlug) {
         .from('stages')
         .select('*')
         .eq('tool_id', tool.id)
-        .order('order', { ascending: true });
+        .order('stage_number', { ascending: true });
         
       if (stagesData) setStages(stagesData);
       

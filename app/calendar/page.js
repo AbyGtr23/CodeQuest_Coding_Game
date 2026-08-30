@@ -58,8 +58,8 @@ export default function CalendarPage() {
         <h2>CONTRIBUTIONS</h2>
         <div className={styles.heatmapWrapper}>
           <HeatmapCalendar 
-            data={activityData} 
-            onDateClick={handleDateClick}
+            activities={activityData} 
+            onDayClick={handleDateClick}
             selectedDate={selectedDate}
           />
         </div>
@@ -73,7 +73,7 @@ export default function CalendarPage() {
               <li key={idx} className={styles.activityItem}>
                 <div className={styles.activityInfo}>
                   <span className={styles.time}>{new Date(activity.date).toLocaleTimeString()}</span>
-                  <span className={styles.action}>Completed: {activity.stage_name}</span>
+                  <span className={styles.action}>Completed: {activity.stage_name || `Stage ${activity.stage_id}`}</span>
                 </div>
                 <div className={styles.activityXp}>+{activity.xp_earned} XP</div>
               </li>

@@ -9,7 +9,9 @@
     "lint": "eslint",
     "generate:curriculum": "node scripts/generate_curriculum.js",
     "seed:curriculum": "node scripts/seed-curriculum.js",
-    "test:smoke": "node scripts/smoke_test.js"
+    "test:smoke": "node scripts/smoke_test.js",
+    "validate:curriculum": "node scripts/validate_curriculum.js",
+    "test": "node scripts/test_suite.js"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",

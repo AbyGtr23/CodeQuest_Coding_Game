@@ -24,7 +24,7 @@ This is the living task list for the CodeQuest development workflow.
 - [ ] **Set Up Local Env File**
   - Copy `.env.local.example` to `.env.local` and fill in the values
 - [ ] **Run Database Migrations**
-  - Execute SQL files from `supabase/migrations/` in order (001 → 004) in the Supabase SQL Editor
+  - Execute SQL files from `supabase/migrations/` in order (001 → 005) in the Supabase SQL Editor
   - Execute `supabase/seed.sql` to insert levels, tools, and badges
 - [ ] **Seed Curriculum Data**
   - Run `node scripts/generate_curriculum.js` to generate curriculum JSON files
@@ -53,6 +53,7 @@ This is the living task list for the CodeQuest development workflow.
   - Create row-level security (RLS) definitions (`supabase/migrations/002_create_rls_policies.sql`)
   - Create query performance indexes (`supabase/migrations/003_create_indexes.sql`)
   - Create triggers and checks (`supabase/migrations/004_create_triggers.sql`)
+  - Create user profile auto-sync trigger (`supabase/migrations/005_create_user_profile_trigger.sql`)
 - [x] **Generate Seed Data & Curriculum Scripts**
   - Build default seed files for Levels, Badges, and Tools (`supabase/seed.sql`)
   - Write Node curriculum import runner (`scripts/seed-curriculum.js`)

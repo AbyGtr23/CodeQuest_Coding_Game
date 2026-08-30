@@ -33,7 +33,7 @@ export default function Profile() {
           </div>
           <div className={styles.userInfo}>
             <h1>{user.username}</h1>
-            <p className={styles.rankBadge}>{user.rank || 'Novice'}</p>
+            <p className={styles.rankBadge}>{user.current_rank || 'Novice'}</p>
           </div>
         </div>
         <div className={styles.heroStats}>
@@ -92,7 +92,7 @@ export default function Profile() {
             </div>
             <div className={styles.statBox}>
               <span className={styles.statName}>Highest Streak</span>
-              <span className={styles.statNum}>{user.highest_streak || 0} days</span>
+              <span className={styles.statNum}>{user.longest_streak || 0} days</span>
             </div>
             <div className={styles.statBox}>
               <span className={styles.statName}>Quests Completed</span>

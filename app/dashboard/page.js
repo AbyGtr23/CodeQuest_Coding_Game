@@ -58,7 +58,7 @@ export default function Dashboard() {
       <header className={styles.header}>
         <div className={styles.welcome}>
           <h1>&gt; WELCOME_BACK, {userData?.username || 'GUEST'}</h1>
-          <p className={styles.rank}>RANK: {userData?.rank || 'Novice'}</p>
+          <p className={styles.rank}>RANK: {userData?.current_rank || 'Novice'}</p>
         </div>
         <div className={styles.stats}>
           <div className={styles.statBox}>

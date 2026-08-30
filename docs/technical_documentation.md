@@ -44,7 +44,12 @@ CodeQuest is built to combine RPG progression mechanisms (quest lines, rank tier
 *   **State Transition**: An active tool slot is freed when the enrolled tool is **Mastered**. Mastery requires 100% completion of all levels and stages (67/67 stages). Once mastered, the user status updates to `mastered`, and the trigger frees up a learning slot.
 *   **Database Trigger**: Checked via PostgreSQL trigger functions (`check_max_active_tools`) prior to row insertions in `user_tools`.
 
-### 2.2 Progress Tracking & Scoring Formulas
+### 2.2 User Profile Lifecycle & Auto-Sync Trigger
+*   **Auth Synchronization**: Supabase manages authentication in `auth.users`. To synchronize application state with `public.users`, PostgreSQL trigger `on_auth_user_created` (`005_create_user_profile_trigger.sql`) fires `AFTER INSERT` on `auth.users`.
+*   **Username Collision Handling**: Extracts username from metadata (`username`, `user_name`, `preferred_username`) or derives from email prefix. If a duplicate username exists in `public.users`, it appends a unique 6-character hex hash from the user UUID.
+*   **Security Context**: Executes with `SECURITY DEFINER` and explicitly sets `search_path = public` to safely provision profiles across OAuth and email registration flows.
+
+### 2.3 Progress Tracking & Scoring Formulas
 *   **XP Tier Matrix**:
     *   **Cadet (Beginner)**: 15 stages × 30 XP = 450 XP
     *   **Soldier (Elementary)**: 15 stages × 50 XP = 750 XP
@@ -61,7 +66,7 @@ CodeQuest is built to combine RPG progression mechanisms (quest lines, rank tier
     *   **Wizard**: Unlocks at 6,000 XP
     *   **Archmage**: Unlocks at 10,000+ XP
 
-### 2.3 Streak Tracking Logic
+### 2.4 Streak Tracking Logic
 *   Calculated dynamically by evaluating contiguous days in the `daily_activity` log.
 *   Upon submission completion:
     *   If `last_active_at` is **today**, streak remains constant.

@@ -54,30 +54,28 @@ export default function QuestMap() {
       <div className={styles.mapContainer}>
         {levels.map((level, lIndex) => {
           const levelCompleted = level.stages.every(s => s.completed);
-          const levelUnlocked = lIndex === 0 || levels[lIndex - 1].stages.every(s => s.completed);
+          // rely on stage.unlocked property
           
           return (
             <div 
-              key={level.level} 
-              className={`${styles.levelSection} ${levelCompleted ? styles.completedLevel : ''} ${!levelUnlocked ? styles.lockedLevel : ''}`}
+              key={level.slug} 
+              className={`${styles.levelSection} ${levelCompleted ? styles.completedLevel : ''}`}
             >
               <h2 className={styles.levelTitle}>
-                LEVEL {level.level}: {level.name.toUpperCase()}
+                {level.name.toUpperCase()}
                 {levelCompleted && <span className={styles.levelBadge}>COMPLETED</span>}
-                {!levelUnlocked && <span className={styles.levelBadge}>LOCKED</span>}
               </h2>
               
               <div className={styles.nodesContainer}>
                 {level.stages.map((stage, sIndex) => {
-                  // A stage is unlocked if the level is unlocked AND it's either the first stage in the level OR the previous stage is completed
-                  const stageUnlocked = levelUnlocked && (sIndex === 0 || level.stages[sIndex - 1].completed);
+                  const stageUnlocked = stage.unlocked;
                   
                   return (
                     <div key={stage.id} className={styles.nodeWrapper}>
                       {sIndex > 0 && <div className={`${styles.nodeConnector} ${stageUnlocked ? styles.connectorActive : ''}`}></div>}
                       
                       <Link 
-                        href={stageUnlocked ? `/quest/${toolSlug}/${level.level}/${stage.order}` : '#'}
+                        href={stageUnlocked ? `/quest/${toolSlug}/${level.slug}/${stage.stage_number}` : '#'}
                         className={`
                           ${styles.stageNode} 
                           ${stage.completed ? styles.nodeCompleted : ''} 
@@ -89,8 +87,8 @@ export default function QuestMap() {
                           {stage.completed ? '✓' : (!stageUnlocked ? '🔒' : '●')}
                         </div>
                         <div className={styles.nodeInfo}>
-                          <span className={styles.stageNum}>STAGE {stage.order}</span>
-                          <span className={styles.stageName}>{stage.name}</span>
+                          <span className={styles.stageNum}>STAGE {stage.stage_number}</span>
+                          <span className={styles.stageName}>{stage.title}</span>
                         </div>
                         <div className={styles.nodeXp}>{stage.xp_reward} XP</div>
                       </Link>

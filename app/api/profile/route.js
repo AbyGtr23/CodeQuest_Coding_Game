@@ -9,28 +9,25 @@ export async function GET() {
     return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
   }
 
-  // 1. Get user profile
   const { data: profile } = await supabase
     .from('users')
     .select('*')
     .eq('id', user.id)
     .single();
 
-  // 2. Get tool progress
   const { data: tools } = await supabase
     .from('user_tools')
-    .select('id, progress, mastered, tools(id, name, slug)')
+    .select('id, progress_pct, status, tools(id, name, slug)')
     .eq('user_id', user.id);
 
   const formattedTools = tools?.map(t => ({
     id: t.tools.id,
     name: t.tools.name,
     slug: t.tools.slug,
-    progress: t.progress,
-    mastered: t.mastered
+    progress: t.progress_pct,
+    mastered: t.status === 'mastered'
   })) || [];
 
-  // 3. Get basic stats
   const { count: totalSubmissions } = await supabase
     .from('code_submissions')
     .select('*', { count: 'exact', head: true })

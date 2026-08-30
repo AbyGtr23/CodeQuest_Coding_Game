@@ -1,0 +1,207 @@
+.stageCurriculum {
+  padding: 2rem 0;
+}
+
+.header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+  padding-bottom: 1.5rem;
+}
+
+.breadcrumb {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.75rem;
+}
+
+.breadcrumb a {
+  color: var(--accent-cyan);
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.current {
+  color: var(--text-primary);
+}
+
+.header h1 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.metaBar {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.xpBadge {
+  color: var(--accent-amber);
+  border: 1px solid var(--accent-amber);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+.typeBadge {
+  color: var(--accent-green);
+  border: 1px solid var(--accent-green);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+.langBadge {
+  color: var(--text-secondary);
+  border: 1px solid var(--bg-tertiary);
+  padding: 0.15rem 0.5rem;
+  border-radius: 2px;
+}
+
+.section {
+  margin-bottom: 2rem;
+}
+
+.section h2 {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--accent-cyan);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.markdownContent {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 4px;
+  padding: 1.5rem;
+  line-height: 1.8;
+  font-size: 0.95rem;
+}
+
+.markdownContent h1,
+.markdownContent h2,
+.markdownContent h3 {
+  color: var(--accent-cyan);
+  margin: 1rem 0 0.5rem;
+}
+
+.markdownContent p {
+  margin-bottom: 0.75rem;
+}
+
+.markdownContent ul,
+.markdownContent ol {
+  padding-left: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdownContent li {
+  margin-bottom: 0.25rem;
+}
+
+.inlineCode {
+  background: var(--bg-tertiary);
+  padding: 0.1rem 0.3rem;
+  border-radius: 2px;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  color: var(--text-code);
+}
+
+.testCases {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.testCase {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.testCaseHeader {
+  background: var(--bg-tertiary);
+  padding: 0.4rem 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+}
+
+.testCaseBody {
+  padding: 0.75rem;
+}
+
+.ioRow {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  align-items: baseline;
+}
+
+.ioLabel {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  min-width: 4rem;
+}
+
+.ioValue {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  background: var(--bg-primary);
+  padding: 0.2rem 0.5rem;
+  border-radius: 2px;
+  color: var(--text-code);
+}
+
+.codeBlock {
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.questCta {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--accent-cyan);
+  border-radius: 4px;
+}
+
+.questButton {
+  font-family: var(--font-mono);
+  font-size: 0.9rem;
+  color: var(--accent-cyan);
+  border: 1px solid var(--accent-cyan);
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.questButton:hover {
+  background: var(--accent-cyan);
+  color: var(--bg-primary);
+}
+
+.nextLink {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+}
+
+.nextLink:hover {
+  color: var(--accent-cyan);
+}
