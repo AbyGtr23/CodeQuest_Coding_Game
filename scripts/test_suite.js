@@ -201,7 +201,13 @@ async function runTests() {
     }
 
     // Test 18: No duplicate stage_number within same tool+level
-    const { data: dupeCheck } = await adminClient.rpc('check_duplicate_stages').catch(() => ({ data: null }));
+    let dupeCheck = null;
+    try {
+      const res = await adminClient.rpc('check_duplicate_stages');
+      dupeCheck = res.data;
+    } catch (e) {
+      dupeCheck = null;
+    }
     // If no RPC exists, do manual check
     if (allStages) {
       const { data: stageDupes } = await adminClient
