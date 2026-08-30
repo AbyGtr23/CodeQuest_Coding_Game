@@ -87,7 +87,24 @@ function validateCurriculumFile(filePath) {
     return;
   }
 
-  if (!Array.isArray(data.stages) || data.stages.length === 0) {
+  if (!Array.isArray(data.stages)) {
+    error(fileName, '?', 'Stages field must be an array');
+    return;
+  }
+
+  if (data.stages.length === 0) {
+    // Check if tools.json marks this tool as having 0 stages (pending authoring)
+    const toolsJsonPath = path.join(__dirname, '../data/seed/tools.json');
+    if (fs.existsSync(toolsJsonPath)) {
+      try {
+        const toolsData = JSON.parse(fs.readFileSync(toolsJsonPath, 'utf8'));
+        const toolEntry = toolsData.find(t => t.slug === data.toolSlug);
+        if (toolEntry && toolEntry.total_stages === 0) {
+          info(`Tool: ${data.toolSlug}, Stages: 0 (Pending authoring per tools.json - valid)`);
+          return;
+        }
+      } catch (e) {}
+    }
     error(fileName, '?', 'No stages found');
     return;
   }

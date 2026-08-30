@@ -4,36 +4,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 1,
-      "title": "SQL Stage 1",
-      "questName": "Quest 1",
-      "lessonContentMd": "## SQL Stage 1\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 1. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Selecting All Columns",
+      "questName": "Database Beacon",
+      "topic": "Basic Queries",
+      "concept": "Retrieving all rows and columns using SELECT *",
+      "prerequisites": [],
+      "learningObjectives": [
+        "Construct basic SELECT * FROM table queries"
+      ],
+      "lessonContentMd": "## Selecting All Columns in SQL\n\nTo retrieve all columns from a relational database table, use the wildcard asterisk (`*`) operator inside a `SELECT` statement. This projects all fields for matching rows in the specified target table.\n\n```sql\nSELECT * FROM users;\n```",
+      "problemStatementMd": "## Database Beacon\n\nWrite a query to select all columns from the table named `agents`.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Query result table containing all rows from agents",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT * FROM agents;",
+          "explanation": "Retrieves all columns from agents table."
+        }
+      ],
+      "starterCode": "-- Write a query to select all columns from agents\n",
+      "solutionCode": "SELECT * FROM agents;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -43,36 +52,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 2,
-      "title": "SQL Stage 2",
-      "questName": "Quest 2",
-      "lessonContentMd": "## SQL Stage 2\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 2. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Selecting Specific Columns",
+      "questName": "Targeted Projection",
+      "topic": "Basic Queries",
+      "concept": "Column projection using SELECT col1, col2",
+      "prerequisites": ["Retrieving all rows and columns using SELECT *"],
+      "learningObjectives": [
+        "Select specific columns by name to reduce dataset width"
+      ],
+      "lessonContentMd": "## Column Projection in SQL\n\nTo retrieve only specific attributes rather than full table rows, list comma-separated column names in your `SELECT` clause. This reduces network payload and improves query execution speed.\n\n```sql\nSELECT username, score FROM players;\n```",
+      "problemStatementMd": "## Targeted Projection\n\nWrite a query to select only the `name` and `rank` columns from the `agents` table.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Two columns: name, rank",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT name, rank FROM agents;",
+          "explanation": "Selects name and rank columns."
+        }
+      ],
+      "starterCode": "-- Write query to select name and rank from agents\n",
+      "solutionCode": "SELECT name, rank FROM agents;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT name, rank FROM agents;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT name, rank FROM agents;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -82,36 +100,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 3,
-      "title": "SQL Stage 3",
-      "questName": "Quest 3",
-      "lessonContentMd": "## SQL Stage 3\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 3. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Filtering Rows with WHERE",
+      "questName": "Signal Filter",
+      "topic": "Filtering",
+      "concept": "Filtering rows using the WHERE clause",
+      "prerequisites": ["Column projection using SELECT col1, col2"],
+      "learningObjectives": [
+        "Filter rows using comparison operators in WHERE clause"
+      ],
+      "lessonContentMd": "## Filtering Rows with WHERE\n\nThe `WHERE` clause filters dataset rows based on conditional boolean expressions. Only table records evaluating to `TRUE` for the predicate condition are included in the returned output.\n\n```sql\nSELECT * FROM users WHERE total_xp >= 1000;\n```",
+      "problemStatementMd": "## Signal Filter\n\nWrite a query to select all columns from `agents` where `status` is equal to `'active'`.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Filtered rows from agents",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT * FROM agents WHERE status = 'active';",
+          "explanation": "Filters for active agents."
+        }
+      ],
+      "starterCode": "-- Write query to select active agents\n",
+      "solutionCode": "SELECT * FROM agents WHERE status = 'active';\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents WHERE status = 'active';",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents WHERE status = 'active';",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -121,36 +148,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 4,
-      "title": "SQL Stage 4",
-      "questName": "Quest 4",
-      "lessonContentMd": "## SQL Stage 4\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 4. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Logical Operators in WHERE",
+      "questName": "Compound Criteria",
+      "topic": "Filtering",
+      "concept": "Combining criteria using AND / OR in WHERE clause",
+      "prerequisites": ["Filtering rows using the WHERE clause"],
+      "learningObjectives": [
+        "Combine multiple boolean predicates using AND and OR"
+      ],
+      "lessonContentMd": "## Compound Conditions in WHERE\n\nCombine multiple filtering criteria in SQL using logical `AND` and `OR` operators. `AND` requires both condition predicates to be true, while `OR` requires at least one predicate to be true.\n\n```sql\nSELECT * FROM products WHERE category = 'gear' AND price < 50;\n```",
+      "problemStatementMd": "## Compound Criteria\n\nWrite a query to select all columns from `agents` where `level >= 5` AND `status = 'active'`.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Filtered rows matching both conditions",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT * FROM agents WHERE level >= 5 AND status = 'active';",
+          "explanation": "Filters with AND condition."
+        }
+      ],
+      "starterCode": "-- Write query with AND condition\n",
+      "solutionCode": "SELECT * FROM agents WHERE level >= 5 AND status = 'active';\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents WHERE level >= 5 AND status = 'active';",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT * FROM agents WHERE level >= 5 AND status = 'active';",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -160,36 +196,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 5,
-      "title": "SQL Stage 5",
-      "questName": "Quest 5",
-      "lessonContentMd": "## SQL Stage 5\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 5. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Sorting Results",
+      "questName": "Leaderboard Order",
+      "topic": "Sorting & Limiting",
+      "concept": "Ordering query results using ORDER BY ASC/DESC",
+      "prerequisites": ["Filtering rows using the WHERE clause"],
+      "learningObjectives": [
+        "Sort results in ascending or descending order"
+      ],
+      "lessonContentMd": "## ORDER BY Clause in SQL\n\nSort returned query records using the `ORDER BY` clause. Specify `ASC` for ascending order (default) or `DESC` for descending order based on one or more column values.\n\n```sql\nSELECT * FROM users ORDER BY total_xp DESC;\n```",
+      "problemStatementMd": "## Leaderboard Order\n\nWrite a query to select `username` and `total_xp` from `users`, ordered by `total_xp` in **descending** order.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Two columns ordered by total_xp DESC",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT username, total_xp FROM users ORDER BY total_xp DESC;",
+          "explanation": "Sorts users by total_xp descending."
+        }
+      ],
+      "starterCode": "-- Write query to sort users by total_xp DESC\n",
+      "solutionCode": "SELECT username, total_xp FROM users ORDER BY total_xp DESC;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT username, total_xp FROM users ORDER BY total_xp DESC;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT username, total_xp FROM users ORDER BY total_xp DESC;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -199,36 +244,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 6,
-      "title": "SQL Stage 6",
-      "questName": "Quest 6",
-      "lessonContentMd": "## SQL Stage 6\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 6. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Limiting Output",
+      "questName": "Top Performers",
+      "topic": "Sorting & Limiting",
+      "concept": "Limiting result set count using LIMIT",
+      "prerequisites": ["Ordering query results using ORDER BY ASC/DESC"],
+      "learningObjectives": [
+        "Cap the number of returned rows using LIMIT"
+      ],
+      "lessonContentMd": "## LIMIT Clause in SQL\n\nThe `LIMIT` clause caps the maximum number of rows returned by a query. When combined with `ORDER BY`, it enables fetching top-N leaderboard records or pagination subsets.\n\n```sql\nSELECT * FROM users ORDER BY total_xp DESC LIMIT 5;\n```",
+      "problemStatementMd": "## Top Performers\n\nWrite a query to select `username` and `total_xp` from `users`, sorted by `total_xp` descending, returning only the **top 10** rows.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Top 10 rows",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT username, total_xp FROM users ORDER BY total_xp DESC LIMIT 10;",
+          "explanation": "Limits result set to top 10."
+        }
+      ],
+      "starterCode": "-- Write query to get top 10 users by total_xp\n",
+      "solutionCode": "SELECT username, total_xp FROM users ORDER BY total_xp DESC LIMIT 10;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT username, total_xp FROM users ORDER BY total_xp DESC LIMIT 10;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT username, total_xp FROM users ORDER BY total_xp DESC LIMIT 10;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -238,36 +292,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 7,
-      "title": "SQL Stage 7",
-      "questName": "Quest 7",
-      "lessonContentMd": "## SQL Stage 7\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 7. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Counting Rows",
+      "questName": "Roster Census",
+      "topic": "Aggregations",
+      "concept": "Counting total rows using aggregate COUNT(*)",
+      "prerequisites": ["Retrieving all rows and columns using SELECT *"],
+      "learningObjectives": [
+        "Calculate row count using aggregate function COUNT(*)"
+      ],
+      "lessonContentMd": "## Aggregate Function: COUNT(*)\n\nThe `COUNT(*)` aggregate function returns the total number of rows matching your query criteria, including rows with NULL values in individual columns.\n\n```sql\nSELECT COUNT(*) FROM agents;\n```",
+      "problemStatementMd": "## Roster Census\n\nWrite a query to count the total number of rows in the `agents` table.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Single number count",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT COUNT(*) FROM agents;",
+          "explanation": "Counts total rows."
+        }
+      ],
+      "starterCode": "-- Write query to count total rows in agents\n",
+      "solutionCode": "SELECT COUNT(*) FROM agents;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT COUNT(*) FROM agents;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT COUNT(*) FROM agents;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -277,36 +340,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 8,
-      "title": "SQL Stage 8",
-      "questName": "Quest 8",
-      "lessonContentMd": "## SQL Stage 8\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 8. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Sum & Average",
+      "questName": "Resource Total",
+      "topic": "Aggregations",
+      "concept": "Numeric aggregations with SUM() and AVG()",
+      "prerequisites": ["Calculate row count using aggregate function COUNT(*)"],
+      "learningObjectives": [
+        "Calculate numeric totals using SUM() and averages using AVG()"
+      ],
+      "lessonContentMd": "## Numeric Aggregations: SUM and AVG\n\nSQL provides built-in functions to compute summary mathematical metrics across numerical table columns:\n- `SUM(column)` returns total added sum\n- `AVG(column)` calculates average value\n\n```sql\nSELECT SUM(xp_earned), AVG(xp_earned) FROM daily_activity;\n```",
+      "problemStatementMd": "## Resource Total\n\nWrite a query to calculate the `SUM(total_xp)` from the `users` table.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Total sum of XP",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT SUM(total_xp) FROM users;",
+          "explanation": "Calculates sum of total_xp."
+        }
+      ],
+      "starterCode": "-- Write query to calculate sum of total_xp from users\n",
+      "solutionCode": "SELECT SUM(total_xp) FROM users;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT SUM(total_xp) FROM users;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT SUM(total_xp) FROM users;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -316,36 +388,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 9,
-      "title": "SQL Stage 9",
-      "questName": "Quest 9",
-      "lessonContentMd": "## SQL Stage 9\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 9. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Group By Aggregations",
+      "questName": "Categorical Census",
+      "topic": "Aggregations",
+      "concept": "Grouping row metrics using GROUP BY",
+      "prerequisites": ["Calculate row count using aggregate function COUNT(*)"],
+      "learningObjectives": [
+        "Group aggregate metrics per category using GROUP BY"
+      ],
+      "lessonContentMd": "## GROUP BY Clause in SQL\n\nThe `GROUP BY` clause groups rows sharing common attribute values so aggregate functions (`COUNT`, `SUM`, `AVG`) compute separate metrics per category group.\n\n```sql\nSELECT category, COUNT(*) FROM tools GROUP BY category;\n```",
+      "problemStatementMd": "## Categorical Census\n\nWrite a query to select `category` and `COUNT(*)` from `tools`, grouped by `category`.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Two columns: category, count per category",
+      "examples": [
+        {
+          "input": "",
+          "output": "SELECT category, COUNT(*) FROM tools GROUP BY category;",
+          "explanation": "Groups tools by category and counts entries."
+        }
+      ],
+      "starterCode": "-- Write query to group tools by category\n",
+      "solutionCode": "SELECT category, COUNT(*) FROM tools GROUP BY category;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT category, COUNT(*) FROM tools GROUP BY category;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT category, COUNT(*) FROM tools GROUP BY category;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -355,231 +436,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 10,
-      "title": "SQL Stage 10",
-      "questName": "Quest 10",
-      "lessonContentMd": "## SQL Stage 10\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 10. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
+      "title": "Inner Table Joins",
+      "questName": "Relational Convergence",
+      "topic": "Joins",
+      "concept": "Combining rows from multiple tables using INNER JOIN",
+      "prerequisites": ["Group aggregate metrics per category using GROUP BY"],
+      "learningObjectives": [
+        "Combine related table records using INNER JOIN ... ON"
+      ],
+      "lessonContentMd": "## INNER JOIN in SQL\n\n`INNER JOIN` combines related rows from two or more tables based on a foreign key relationship predicate specified in the `ON` clause.\n\n```sql\nSELECT users.username, user_tools.progress_pct\nFROM users\nINNER JOIN user_tools ON users.id = user_tools.user_id;\n```",
+      "problemStatementMd": "## Relational Convergence\n\nWrite a query to select `stages.title` and `tools.name` by performing an `INNER JOIN` between `stages` and `tools` on `stages.tool_id = tools.id`.",
+      "constraints": "Standard SQL syntax",
+      "inputFormat": "None",
+      "outputFormat": "Two columns: stages.title, tools.name",
+      "examples": [
         {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
+          "input": "",
+          "output": "SELECT stages.title, tools.name FROM stages INNER JOIN tools ON stages.tool_id = tools.id;",
+          "explanation": "Joins stages and tools tables."
         }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 11,
-      "title": "SQL Stage 11",
-      "questName": "Quest 11",
-      "lessonContentMd": "## SQL Stage 11\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 11. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      ],
+      "starterCode": "-- Write inner join query between stages and tools\n",
+      "solutionCode": "SELECT stages.title, tools.name FROM stages INNER JOIN tools ON stages.tool_id = tools.id;\n",
       "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
+      "languageId": "82",
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "SELECT stages.title, tools.name FROM stages INNER JOIN tools ON stages.tool_id = tools.id;",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 12,
-      "title": "SQL Stage 12",
-      "questName": "Quest 12",
-      "lessonContentMd": "## SQL Stage 12\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 12. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 13,
-      "title": "SQL Stage 13",
-      "questName": "Quest 13",
-      "lessonContentMd": "## SQL Stage 13\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 13. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 14,
-      "title": "SQL Stage 14",
-      "questName": "Quest 14",
-      "lessonContentMd": "## SQL Stage 14\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 14. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 15,
-      "title": "SQL Stage 15",
-      "questName": "Quest 15",
-      "lessonContentMd": "## SQL Stage 15\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 15. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "SELECT stages.title, tools.name FROM stages INNER JOIN tools ON stages.tool_id = tools.id;",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000

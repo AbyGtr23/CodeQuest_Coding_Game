@@ -41,8 +41,7 @@ const serviceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
 const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
 if (!supabaseUrl) {
-  console.error('❌ Missing NEXT_PUBLIC_SUPABASE_URL in .env.local');
-  process.exit(1);
+  console.warn('⚠️  NEXT_PUBLIC_SUPABASE_URL not set in .env.local. Live DB tests will be skipped, running static & code contract checks...\n');
 }
 
 const adminClient = serviceKey ? createClient(supabaseUrl, serviceKey) : null;
@@ -289,7 +288,7 @@ async function runTests() {
     { path: 'components/StageNode/StageNode.js', mustContain: ['stage_number', 'title'], mustNotContain: ['stage.order', 'stage.name'] },
     { path: 'app/dashboard/page.js', mustContain: ['current_rank'], mustNotContain: [] },
     { path: 'app/profile/page.js', mustContain: ['current_rank', 'longest_streak'], mustNotContain: ['user.rank', 'highest_streak'] },
-    { path: 'providers/AuthProvider.js', mustContain: ['retry', 'delay'], mustNotContain: [] },
+    { path: 'providers/AuthProvider.js', mustContain: ['retryCount', 'setTimeout'], mustNotContain: [] },
   ];
 
   for (const check of frontendChecks) {

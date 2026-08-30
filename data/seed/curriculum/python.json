@@ -4,36 +4,46 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 1,
-      "title": "PYTHON Stage 1",
-      "questName": "Quest 1",
-      "lessonContentMd": "## PYTHON Stage 1\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 1. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Standard Output & Printing",
+      "questName": "The First Signal",
+      "topic": "Fundamentals",
+      "concept": "Console output using the print function",
+      "prerequisites": [],
+      "learningObjectives": [
+        "Use the print() function to output text to stdout",
+        "Understand string literals in Python"
+      ],
+      "lessonContentMd": "## Standard Output in Python\n\nIn Python, standard output is handled using the built-in `print()` function. To output text, wrap the sequence of characters in single or double quotes, creating a **string literal**.\n\n```python\nprint(\"Hello, CodeQuest!\")\n```\n\nMultiple items can be printed by separating them with commas:\n```python\nprint(\"System status:\", \"ONLINE\")\n```",
+      "problemStatementMd": "## The First Signal\n\nYour starship's communication array has rebooted. You must transmit the standard beacon message to verify standard output is working.\n\nPrint the exact message: `Hello, World!`",
+      "constraints": "None",
+      "inputFormat": "No input",
+      "outputFormat": "Single line containing: Hello, World!",
+      "examples": [
+        {
+          "input": "",
+          "output": "Hello, World!",
+          "explanation": "Outputs the exact beacon message to stdout."
+        }
+      ],
+      "starterCode": "# Write your code below to print 'Hello, World!'\n",
+      "solutionCode": "print('Hello, World!')\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Hello, World!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Hello, World!",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -43,36 +53,46 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 2,
-      "title": "PYTHON Stage 2",
-      "questName": "Quest 2",
-      "lessonContentMd": "## PYTHON Stage 2\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 2. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Variables & Data Types",
+      "questName": "Resource Allocation",
+      "topic": "Fundamentals",
+      "concept": "Variable assignment and primitive types",
+      "prerequisites": ["Console output using the print function"],
+      "learningObjectives": [
+        "Assign values to variables",
+        "Understand Python primitive types: int, float, str, bool"
+      ],
+      "lessonContentMd": "## Variables & Types in Python\n\nVariables are created when you assign a value to a name using the `=` operator. Python is dynamically typed, meaning you do not declare variable types explicitly.\n\n```python\nplayer_name = \"Cadet\"\nenergy_level = 100\nshield_percentage = 98.5\nis_active = True\n```",
+      "problemStatementMd": "## Resource Allocation\n\nAssign the integer value `42` to a variable named `fuel` and print its value.",
+      "constraints": "None",
+      "inputFormat": "No input",
+      "outputFormat": "Single line containing: 42",
+      "examples": [
+        {
+          "input": "",
+          "output": "42",
+          "explanation": "Prints the fuel variable."
+        }
+      ],
+      "starterCode": "# Define variable 'fuel' and print it\n",
+      "solutionCode": "fuel = 42\nprint(fuel)\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "42",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "42",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -82,36 +102,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 3,
-      "title": "PYTHON Stage 3",
-      "questName": "Quest 3",
-      "lessonContentMd": "## PYTHON Stage 3\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 3. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Reading Input & Type Casting",
+      "questName": "User Identification",
+      "topic": "Input & Output",
+      "concept": "Reading stdin and casting types using int() and float()",
+      "prerequisites": ["Variable assignment and primitive types"],
+      "learningObjectives": [
+        "Read user input using input()",
+        "Convert string inputs to integers using int()"
+      ],
+      "lessonContentMd": "## Reading Input in Python\n\nThe `input()` function reads a line from standard input as a `string`.\nTo perform math on numbers read from input, you must cast the string to an `int` or `float`.\n\n```python\nraw_age = input()\nage = int(raw_age)\nprint(age + 1)\n```",
+      "problemStatementMd": "## User Identification\n\nRead an integer `n` from input. Calculate and print `n + 10`.",
+      "constraints": "1 <= n <= 1000",
+      "inputFormat": "A single integer n on standard input",
+      "outputFormat": "A single integer representing n + 10",
+      "examples": [
+        {
+          "input": "5",
+          "output": "15",
+          "explanation": "5 + 10 = 15"
+        }
+      ],
+      "starterCode": "# Read input, convert to int, add 10, print result\nimport sys\n",
+      "solutionCode": "import sys\nn = int(sys.stdin.read().strip())\nprint(n + 10)\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "5",
+          "expectedOutput": "15",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "100",
+          "expectedOutput": "110",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "0",
+          "expectedOutput": "10",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -121,36 +159,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 4,
-      "title": "PYTHON Stage 4",
-      "questName": "Quest 4",
-      "lessonContentMd": "## PYTHON Stage 4\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 4. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Arithmetic Operators",
+      "questName": "Orbital Calculation",
+      "topic": "Operators",
+      "concept": "Basic arithmetic operators: +, -, *, //, %, **",
+      "prerequisites": ["Reading stdin and casting types using int() and float()"],
+      "learningObjectives": [
+        "Use floor division // and modulo %",
+        "Perform basic math computations in Python"
+      ],
+      "lessonContentMd": "## Arithmetic Operators\n\nPython supports standard math operators:\n- `+` Addition, `-` Subtraction, `*` Multiplication\n- `/` Floating-point division\n- `//` Floor (integer) division\n- `%` Modulo (remainder)\n- `**` Exponentiation\n\n```python\nprint(10 // 3)  # Outputs: 3\nprint(10 % 3)   # Outputs: 1\n```",
+      "problemStatementMd": "## Orbital Calculation\n\nGiven two integers `a` and `b` (on separate lines), compute and print:\n1. Their product (`a * b`)\n2. The remainder when `a` is divided by `b` (`a % b`) on the next line.",
+      "constraints": "1 <= a, b <= 1000",
+      "inputFormat": "Two integers a and b on separate lines",
+      "outputFormat": "Two integers on separate lines",
+      "examples": [
+        {
+          "input": "10\n3",
+          "output": "30\n1",
+          "explanation": "Product is 30, remainder 10 % 3 is 1."
+        }
+      ],
+      "starterCode": "import sys\nlines = sys.stdin.read().split()\nif lines:\n    a = int(lines[0])\n    b = int(lines[1])\n    # Compute and print product and remainder\n",
+      "solutionCode": "import sys\nlines = sys.stdin.read().split()\nif lines:\n    a = int(lines[0])\n    b = int(lines[1])\n    print(a * b)\n    print(a % b)\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "10\n3",
+          "expectedOutput": "30\n1",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "25\n4",
+          "expectedOutput": "100\n1",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "7\n7",
+          "expectedOutput": "49\n0",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -160,36 +216,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 5,
-      "title": "PYTHON Stage 5",
-      "questName": "Quest 5",
-      "lessonContentMd": "## PYTHON Stage 5\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 5. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "String Formatting & Methods",
+      "questName": "Transmitter Protocol",
+      "topic": "Strings",
+      "concept": "f-strings and common string methods (.upper(), .strip())",
+      "prerequisites": ["Reading stdin and casting types using int() and float()"],
+      "learningObjectives": [
+        "Format strings using f-strings",
+        "Use string methods like .upper() and .strip()"
+      ],
+      "lessonContentMd": "## String Formatting & Methods\n\nIn Python, **f-strings** (formatted string literals) allow embedding expressions inside strings using `{}`:\n\n```python\nname = \"Commander\"\nscore = 95\nprint(f\"Agent {name} scored {score} points.\")\n```\n\nUseful string methods:\n- `s.strip()` removes leading/trailing whitespace\n- `s.upper()` converts string to uppercase\n- `s.lower()` converts string to lowercase\n",
+      "problemStatementMd": "## Transmitter Protocol\n\nRead a name from input. Print an uppercase greeting formatted exactly as:\n`COMMANDER <UPPERCASE_NAME> READY!`",
+      "constraints": "Name length 1 to 50 characters",
+      "inputFormat": "A single line string containing the name",
+      "outputFormat": "Single line greeting formatted as specified",
+      "examples": [
+        {
+          "input": "Antigravity",
+          "output": "COMMANDER ANTIGRAVITY READY!",
+          "explanation": "Converts 'Antigravity' to uppercase and embeds into template."
+        }
+      ],
+      "starterCode": "import sys\nname = sys.stdin.read().strip()\n# Print formatted uppercase greeting\n",
+      "solutionCode": "import sys\nname = sys.stdin.read().strip()\nprint(f\"COMMANDER {name.upper()} READY!\")\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "Antigravity",
+          "expectedOutput": "COMMANDER ANTIGRAVITY READY!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "cadet_zero",
+          "expectedOutput": "COMMANDER CADET_ZERO READY!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "x",
+          "expectedOutput": "COMMANDER X READY!",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -199,36 +273,59 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 6,
-      "title": "PYTHON Stage 6",
-      "questName": "Quest 6",
-      "lessonContentMd": "## PYTHON Stage 6\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 6. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Conditional Branching",
+      "questName": "Security Clearance",
+      "topic": "Control Flow",
+      "concept": "if, elif, and else statements",
+      "prerequisites": ["Reading stdin and casting types using int() and float()"],
+      "learningObjectives": [
+        "Control program execution flow using if/elif/else conditions",
+        "Use comparison operators (==, !=, >, <, >=, <=)"
+      ],
+      "lessonContentMd": "## Conditionals in Python\n\nConditional statements execute code blocks based on boolean evaluation.\nIndentation (4 spaces) defines the code block inside each branch.\n\n```python\nscore = 85\nif score >= 90:\n    print(\"Grade: A\")\nelif score >= 80:\n    print(\"Grade: B\")\nelse:\n    print(\"Grade: C\")\n```",
+      "problemStatementMd": "## Security Clearance\n\nRead an integer score `n` from input. Output:\n- `ACCESS GRANTED` if `n >= 70`\n- `ACCESS DENIED` if `n < 70`",
+      "constraints": "0 <= n <= 100",
+      "inputFormat": "A single integer n",
+      "outputFormat": "ACCESS GRANTED or ACCESS DENIED",
+      "examples": [
+        {
+          "input": "85",
+          "output": "ACCESS GRANTED",
+          "explanation": "85 >= 70"
+        },
+        {
+          "input": "50",
+          "output": "ACCESS DENIED",
+          "explanation": "50 < 70"
+        }
+      ],
+      "starterCode": "import sys\nn = int(sys.stdin.read().strip())\n# Check condition and print result\n",
+      "solutionCode": "import sys\nn = int(sys.stdin.read().strip())\nif n >= 70:\n    print(\"ACCESS GRANTED\")\nelse:\n    print(\"ACCESS DENIED\")\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "85",
+          "expectedOutput": "ACCESS GRANTED",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "50",
+          "expectedOutput": "ACCESS DENIED",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "70",
+          "expectedOutput": "ACCESS GRANTED",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -238,36 +335,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 7,
-      "title": "PYTHON Stage 7",
-      "questName": "Quest 7",
-      "lessonContentMd": "## PYTHON Stage 7\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 7. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Logical Operators",
+      "questName": "Life Support Diagnostic",
+      "topic": "Control Flow",
+      "concept": "Combining conditions using and, or, not",
+      "prerequisites": ["if, elif, and else statements"],
+      "learningObjectives": [
+        "Combine multiple boolean expressions with and, or, not"
+      ],
+      "lessonContentMd": "## Logical Operators\n\nCombine conditions using Python's logical operators:\n- `and`: True if **both** operands are True\n- `or`: True if **at least one** operand is True\n- `not`: Inverts boolean value\n\n```python\noxygen = 95\npressure = 1.0\nif oxygen > 90 and pressure == 1.0:\n    print(\"Systems Nominal\")\n```",
+      "problemStatementMd": "## Life Support Diagnostic\n\nRead two space-separated integers `oxygen` and `power` from input.\nOutput `STABLE` if `oxygen >= 80` AND `power >= 50`. Otherwise, output `CRITICAL`.",
+      "constraints": "0 <= oxygen, power <= 100",
+      "inputFormat": "Two space-separated integers on one line",
+      "outputFormat": "STABLE or CRITICAL",
+      "examples": [
+        {
+          "input": "90 60",
+          "output": "STABLE",
+          "explanation": "Both conditions met (90 >= 80 and 60 >= 50)."
+        }
+      ],
+      "starterCode": "import sys\nparts = sys.stdin.read().split()\nif len(parts) >= 2:\n    oxygen = int(parts[0])\n    power = int(parts[1])\n    # Implement logical check\n",
+      "solutionCode": "import sys\nparts = sys.stdin.read().split()\nif len(parts) >= 2:\n    oxygen = int(parts[0])\n    power = int(parts[1])\n    if oxygen >= 80 and power >= 50:\n        print(\"STABLE\")\n    else:\n        print(\"CRITICAL\")\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "90 60",
+          "expectedOutput": "STABLE",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "85 40",
+          "expectedOutput": "CRITICAL",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "80 50",
+          "expectedOutput": "STABLE",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -277,18 +391,44 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 8,
-      "title": "PYTHON Stage 8",
-      "questName": "Quest 8",
-      "lessonContentMd": "## PYTHON Stage 8\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 8. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "For Loops & Range",
+      "questName": "Countdown Sequence",
+      "topic": "Loops & Iteration",
+      "concept": "Definite iteration with for loops and range()",
+      "prerequisites": ["if, elif, and else statements"],
+      "learningObjectives": [
+        "Iterate a fixed number of times using for loops",
+        "Understand range(start, stop, step)"
+      ],
+      "lessonContentMd": "## For Loops in Python\n\n`for` loops iterate over sequence types or number ranges generated by `range()`.\n\n`range(n)` generates sequence `0` to `n-1`.\n`range(start, stop)` generates `start` to `stop-1`.\n\n```python\nfor i in range(1, 4):\n    print(f\"Iteration {i}\")\n```",
+      "problemStatementMd": "## Countdown Sequence\n\nRead an integer `n` from input. Print numbers from `1` up to `n` (inclusive), each on a new line.",
+      "constraints": "1 <= n <= 100",
+      "inputFormat": "A single integer n",
+      "outputFormat": "Integers from 1 to n, each on its own line",
+      "examples": [
+        {
+          "input": "3",
+          "output": "1\n2\n3",
+          "explanation": "Iterates from 1 to 3."
+        }
+      ],
+      "starterCode": "import sys\nn = int(sys.stdin.read().strip())\n# Print numbers 1 through n\n",
+      "solutionCode": "import sys\nn = int(sys.stdin.read().strip())\nfor i in range(1, n + 1):\n    print(i)\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
+          "input": "3",
+          "expectedOutput": "1\n2\n3",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
           "input": "1",
           "expectedOutput": "1",
           "isHidden": false,
@@ -296,17 +436,9 @@
           "memoryLimitKb": 128000
         },
         {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "5",
+          "expectedOutput": "1\n2\n3\n4\n5",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -316,36 +448,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 9,
-      "title": "PYTHON Stage 9",
-      "questName": "Quest 9",
-      "lessonContentMd": "## PYTHON Stage 9\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 9. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "While Loops",
+      "questName": "Battery Depletion",
+      "topic": "Loops & Iteration",
+      "concept": "Indefinite iteration using while loops",
+      "prerequisites": ["Definite iteration with for loops and range()"],
+      "learningObjectives": [
+        "Iterate based on condition evaluation using while loops",
+        "Avoid infinite loops by updating state variables"
+      ],
+      "lessonContentMd": "## While Loops in Python\n\nA `while` loop repeatedly executes a block as long as its boolean condition remains `True`.\n\n```python\ncharge = 10\nwhile charge > 0:\n    print(f\"Battery at {charge}%\")\n    charge -= 3\n```",
+      "problemStatementMd": "## Battery Depletion\n\nRead an initial battery level `n` from input. Repeatedly subtract `15` from `n` and print the remaining battery level after each subtraction until battery level is `<= 0`.",
+      "constraints": "10 <= n <= 200",
+      "inputFormat": "A single integer n",
+      "outputFormat": "Remaining battery levels after each 15 unit step until <= 0",
+      "examples": [
+        {
+          "input": "40",
+          "output": "25\n10\n-5",
+          "explanation": "40-15=25, 25-15=10, 10-15=-5 (loop stops as -5 <= 0)."
+        }
+      ],
+      "starterCode": "import sys\nn = int(sys.stdin.read().strip())\n# Implement while loop subtracting 15\n",
+      "solutionCode": "import sys\nn = int(sys.stdin.read().strip())\nwhile n > 0:\n    n -= 15\n    print(n)\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "40",
+          "expectedOutput": "25\n10\n-5",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "15",
+          "expectedOutput": "0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "30",
+          "expectedOutput": "15\n0",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -355,36 +505,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 10,
-      "title": "PYTHON Stage 10",
-      "questName": "Quest 10",
-      "lessonContentMd": "## PYTHON Stage 10\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 10. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Lists & Indexing",
+      "questName": "Inventory Vault",
+      "topic": "Data Structures",
+      "concept": "Creating lists, 0-based indexing, and length len()",
+      "prerequisites": ["Definite iteration with for loops and range()"],
+      "learningObjectives": [
+        "Create lists and access elements by 0-based index",
+        "Use len() to measure list size"
+      ],
+      "lessonContentMd": "## Lists & Indexing\n\nLists store ordered collections of items. Elements are accessed using 0-based indices.\n\n```python\nitems = [\"sword\", \"shield\", \"potion\"]\nprint(items[0])       # \"sword\"\nprint(len(items))     # 3\nprint(items[-1])      # \"potion\" (last element)\n```",
+      "problemStatementMd": "## Inventory Vault\n\nRead a list of space-separated integers from input.\nPrint:\n1. The number of items in the list\n2. The first item in the list\n3. The last item in the list (each on a new line)",
+      "constraints": "List contains 1 to 100 space-separated integers",
+      "inputFormat": "A single line containing space-separated integers",
+      "outputFormat": "Three lines: length, first element, last element",
+      "examples": [
+        {
+          "input": "10 20 30 40",
+          "output": "4\n10\n40",
+          "explanation": "Length is 4, first item 10, last item 40."
+        }
+      ],
+      "starterCode": "import sys\nitems = sys.stdin.read().split()\n# Print length, first element, last element\n",
+      "solutionCode": "import sys\nitems = sys.stdin.read().split()\nif items:\n    print(len(items))\n    print(items[0])\n    print(items[-1])\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "10 20 30 40",
+          "expectedOutput": "4\n10\n40",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "99",
+          "expectedOutput": "1\n99\n99",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "5 4 3 2 1",
+          "expectedOutput": "5\n5\n1",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -394,36 +562,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 11,
-      "title": "PYTHON Stage 11",
-      "questName": "Quest 11",
-      "lessonContentMd": "## PYTHON Stage 11\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 11. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "List Aggregations & Sum",
+      "questName": "Loot Calculator",
+      "topic": "Data Structures",
+      "concept": "List aggregation functions sum(), max(), min()",
+      "prerequisites": ["Creating lists, 0-based indexing, and length len()"],
+      "learningObjectives": [
+        "Aggregate numerical lists using sum(), max(), and min()"
+      ],
+      "lessonContentMd": "## List Aggregations\n\nPython provides built-in functions to summarize numeric lists:\n- `sum(list)` calculates total sum\n- `max(list)` returns maximum value\n- `min(list)` returns minimum value\n\n```python\nscores = [80, 95, 70]\nprint(sum(scores))  # 245\nprint(max(scores))  # 95\n```",
+      "problemStatementMd": "## Loot Calculator\n\nGiven a line of space-separated integers, convert them to integers and print:\n1. Total sum (`sum`)\n2. Maximum value (`max`)\non separate lines.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Space-separated integers on standard input",
+      "outputFormat": "Two lines: sum, then max value",
+      "examples": [
+        {
+          "input": "5 12 3 20",
+          "output": "40\n20",
+          "explanation": "Sum = 40, max = 20."
+        }
+      ],
+      "starterCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\n# Print sum and max\n",
+      "solutionCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\nif nums:\n    print(sum(nums))\n    print(max(nums))\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "5 12 3 20",
+          "expectedOutput": "40\n20",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "100",
+          "expectedOutput": "100\n100",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "-5 0 5",
+          "expectedOutput": "0\n5",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -433,36 +618,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 12,
-      "title": "PYTHON Stage 12",
-      "questName": "Quest 12",
-      "lessonContentMd": "## PYTHON Stage 12\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 12. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Functions & Returns",
+      "questName": "Modular Thruster",
+      "topic": "Functions",
+      "concept": "Defining functions with def and returning values with return",
+      "prerequisites": ["Variable assignment and primitive types"],
+      "learningObjectives": [
+        "Define reusable functions using def",
+        "Pass parameters and return calculated values"
+      ],
+      "lessonContentMd": "## Functions in Python\n\nFunctions are reusable blocks defined using the `def` keyword.\n\n```python\ndef double(x):\n    return x * 2\n\nresult = double(21)\nprint(result)  # 42\n```",
+      "problemStatementMd": "## Modular Thruster\n\nDefine a function `square(n)` that returns `n * n`.\nRead an integer `x` from input, call `square(x)`, and print the returned result.",
+      "constraints": "1 <= x <= 1000",
+      "inputFormat": "Single integer x",
+      "outputFormat": "Square of x",
+      "examples": [
+        {
+          "input": "6",
+          "output": "36",
+          "explanation": "square(6) returns 36."
+        }
+      ],
+      "starterCode": "import sys\n\ndef square(n):\n    # Return square of n\n    pass\n\nx = int(sys.stdin.read().strip())\nprint(square(x))\n",
+      "solutionCode": "import sys\n\ndef square(n):\n    return n * n\n\nx = int(sys.stdin.read().strip())\nprint(square(x))\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "6",
+          "expectedOutput": "36",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "12",
+          "expectedOutput": "144",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "0",
+          "expectedOutput": "0",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -472,36 +675,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 13,
-      "title": "PYTHON Stage 13",
-      "questName": "Quest 13",
-      "lessonContentMd": "## PYTHON Stage 13\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 13. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Dictionaries & Key Lookup",
+      "questName": "Codex Database",
+      "topic": "Data Structures",
+      "concept": "Creating dicts, key assignment, and lookup using .get()",
+      "prerequisites": ["Creating lists, 0-based indexing, and length len()"],
+      "learningObjectives": [
+        "Store key-value pairs using Python dictionaries",
+        "Look up values by key safely"
+      ],
+      "lessonContentMd": "## Dictionaries in Python\n\nDictionaries store key-value mapping in curly braces `{}`.\n\n```python\nplayer = {\"name\": \"Alice\", \"level\": 5}\nprint(player[\"name\"])       # \"Alice\"\nprint(player.get(\"xp\", 0))  # 0 (fallback if key missing)\n```",
+      "problemStatementMd": "## Codex Database\n\nGiven space-separated key:value pairs (e.g. `alpha:100 beta:200`), followed by a query key on the last line, print the value corresponding to the query key. If the query key is not present, print `NOT FOUND`.",
+      "constraints": "Keys are alphanumeric strings",
+      "inputFormat": "Line 1: space-separated key:value pairs. Line 2: query key",
+      "outputFormat": "Value associated with key or NOT FOUND",
+      "examples": [
+        {
+          "input": "a:10 b:20 c:30\nb",
+          "output": "20",
+          "explanation": "Key 'b' maps to value 20."
+        }
+      ],
+      "starterCode": "import sys\nlines = sys.stdin.read().strip().split('\\n')\nif len(lines) >= 2:\n    pairs = lines[0].split()\n    query = lines[1].strip()\n    # Parse dict and query\n",
+      "solutionCode": "import sys\nlines = sys.stdin.read().strip().split('\\n')\nif len(lines) >= 2:\n    pairs = lines[0].split()\n    query = lines[1].strip()\n    data = {}\n    for pair in pairs:\n        if ':' in pair:\n            k, v = pair.split(':', 1)\n            data[k] = v\n    print(data.get(query, \"NOT FOUND\"))\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "a:10 b:20 c:30\nb",
+          "expectedOutput": "20",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "a:10 b:20 c:30\nz",
+          "expectedOutput": "NOT FOUND",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "python:awesome\npython",
+          "expectedOutput": "awesome",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -511,36 +732,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 14,
-      "title": "PYTHON Stage 14",
-      "questName": "Quest 14",
-      "lessonContentMd": "## PYTHON Stage 14\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 14. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "List Filtering & Logic",
+      "questName": "Anomaly Filter",
+      "topic": "Algorithms",
+      "concept": "Filtering elements from a list using conditionals and loops",
+      "prerequisites": ["Definite iteration with for loops and range()", "if, elif, and else statements"],
+      "learningObjectives": [
+        "Filter lists based on boolean predicate conditions"
+      ],
+      "lessonContentMd": "## List Filtering\n\nFiltering extracts elements that satisfy a condition:\n\n```python\nnums = [1, 2, 3, 4, 5, 6]\nevens = []\nfor n in nums:\n    if n % 2 == 0:\n        evens.append(n)\nprint(evens)  # [2, 4, 6]\n```",
+      "problemStatementMd": "## Anomaly Filter\n\nRead space-separated integers from input. Filter and print only the **even** numbers, separated by a single space.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Line of space-separated integers",
+      "outputFormat": "Space-separated string of even integers",
+      "examples": [
+        {
+          "input": "1 2 3 4 5 6",
+          "output": "2 4 6",
+          "explanation": "2, 4, 6 are even numbers."
+        }
+      ],
+      "starterCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\n# Filter evens and print space-separated\n",
+      "solutionCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\nevens = [str(x) for x in nums if x % 2 == 0]\nprint(\" \".join(evens))\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "1 2 3 4 5 6",
+          "expectedOutput": "2 4 6",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "1 3 5",
+          "expectedOutput": "",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "10 15 20 25",
+          "expectedOutput": "10 20",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -550,2064 +788,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 15,
-      "title": "PYTHON Stage 15",
-      "questName": "Quest 15",
-      "lessonContentMd": "## PYTHON Stage 15\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 15. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
+      "title": "List Comprehensions",
+      "questName": "Quantum Processor",
+      "topic": "Functional Constructs",
+      "concept": "List comprehensions for inline transformation",
+      "prerequisites": ["Filtering elements from a list using conditionals and loops"],
+      "learningObjectives": [
+        "Transform lists concisely using Python list comprehensions"
+      ],
+      "lessonContentMd": "## List Comprehensions\n\nList comprehensions provide a compact syntax for constructing new lists:\n\n```python\n# [expression for item in iterable if condition]\nsquares = [x ** 2 for x in range(5)]  # [0, 1, 4, 9, 16]\n```",
+      "problemStatementMd": "## Quantum Processor\n\nRead space-separated integers from input. Using a list comprehension, double every number (`x * 2`) and print the transformed numbers separated by spaces.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Space-separated integers",
+      "outputFormat": "Space-separated integers multiplied by 2",
+      "examples": [
         {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
+          "input": "1 2 3",
+          "output": "2 4 6",
+          "explanation": "1*2=2, 2*2=4, 3*2=6."
         }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 16,
-      "title": "PYTHON Stage 16",
-      "questName": "Quest 16",
-      "lessonContentMd": "## PYTHON Stage 16\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 16. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      ],
+      "starterCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\n# Transform nums using list comprehension and print space-separated\n",
+      "solutionCode": "import sys\nnums = [int(x) for x in sys.stdin.read().split()]\ndoubled = [str(x * 2) for x in nums]\nprint(\" \".join(doubled))\n",
       "exerciseType": "coding-challenge",
       "languageId": "71",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "1 2 3",
+          "expectedOutput": "2 4 6",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "0 5 10",
+          "expectedOutput": "0 10 20",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 17,
-      "title": "PYTHON Stage 17",
-      "questName": "Quest 17",
-      "lessonContentMd": "## PYTHON Stage 17\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 17. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 18,
-      "title": "PYTHON Stage 18",
-      "questName": "Quest 18",
-      "lessonContentMd": "## PYTHON Stage 18\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 18. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 19,
-      "title": "PYTHON Stage 19",
-      "questName": "Quest 19",
-      "lessonContentMd": "## PYTHON Stage 19\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 19. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 20,
-      "title": "PYTHON Stage 20",
-      "questName": "Quest 20",
-      "lessonContentMd": "## PYTHON Stage 20\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 20. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 21,
-      "title": "PYTHON Stage 21",
-      "questName": "Quest 21",
-      "lessonContentMd": "## PYTHON Stage 21\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 21. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 22,
-      "title": "PYTHON Stage 22",
-      "questName": "Quest 22",
-      "lessonContentMd": "## PYTHON Stage 22\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 22. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 23,
-      "title": "PYTHON Stage 23",
-      "questName": "Quest 23",
-      "lessonContentMd": "## PYTHON Stage 23\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 23. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 24,
-      "title": "PYTHON Stage 24",
-      "questName": "Quest 24",
-      "lessonContentMd": "## PYTHON Stage 24\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 24. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 25,
-      "title": "PYTHON Stage 25",
-      "questName": "Quest 25",
-      "lessonContentMd": "## PYTHON Stage 25\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 25. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 26,
-      "title": "PYTHON Stage 26",
-      "questName": "Quest 26",
-      "lessonContentMd": "## PYTHON Stage 26\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 26. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 27,
-      "title": "PYTHON Stage 27",
-      "questName": "Quest 27",
-      "lessonContentMd": "## PYTHON Stage 27\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 27. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 28,
-      "title": "PYTHON Stage 28",
-      "questName": "Quest 28",
-      "lessonContentMd": "## PYTHON Stage 28\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 28. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 29,
-      "title": "PYTHON Stage 29",
-      "questName": "Quest 29",
-      "lessonContentMd": "## PYTHON Stage 29\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 29. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 30,
-      "title": "PYTHON Stage 30",
-      "questName": "Quest 30",
-      "lessonContentMd": "## PYTHON Stage 30\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 30. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 31,
-      "title": "PYTHON Stage 31",
-      "questName": "Quest 31",
-      "lessonContentMd": "## PYTHON Stage 31\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 31. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 32,
-      "title": "PYTHON Stage 32",
-      "questName": "Quest 32",
-      "lessonContentMd": "## PYTHON Stage 32\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 32. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 33,
-      "title": "PYTHON Stage 33",
-      "questName": "Quest 33",
-      "lessonContentMd": "## PYTHON Stage 33\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 33. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 34,
-      "title": "PYTHON Stage 34",
-      "questName": "Quest 34",
-      "lessonContentMd": "## PYTHON Stage 34\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 34. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 35,
-      "title": "PYTHON Stage 35",
-      "questName": "Quest 35",
-      "lessonContentMd": "## PYTHON Stage 35\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 35. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 36,
-      "title": "PYTHON Stage 36",
-      "questName": "Quest 36",
-      "lessonContentMd": "## PYTHON Stage 36\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 36. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 37,
-      "title": "PYTHON Stage 37",
-      "questName": "Quest 37",
-      "lessonContentMd": "## PYTHON Stage 37\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 37. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 38,
-      "title": "PYTHON Stage 38",
-      "questName": "Quest 38",
-      "lessonContentMd": "## PYTHON Stage 38\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 38. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 39,
-      "title": "PYTHON Stage 39",
-      "questName": "Quest 39",
-      "lessonContentMd": "## PYTHON Stage 39\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 39. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 40,
-      "title": "PYTHON Stage 40",
-      "questName": "Quest 40",
-      "lessonContentMd": "## PYTHON Stage 40\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 40. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 41,
-      "title": "PYTHON Stage 41",
-      "questName": "Quest 41",
-      "lessonContentMd": "## PYTHON Stage 41\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 41. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 42,
-      "title": "PYTHON Stage 42",
-      "questName": "Quest 42",
-      "lessonContentMd": "## PYTHON Stage 42\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 42. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 43,
-      "title": "PYTHON Stage 43",
-      "questName": "Quest 43",
-      "lessonContentMd": "## PYTHON Stage 43\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 43. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 44,
-      "title": "PYTHON Stage 44",
-      "questName": "Quest 44",
-      "lessonContentMd": "## PYTHON Stage 44\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 44. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 45,
-      "title": "PYTHON Stage 45",
-      "questName": "Quest 45",
-      "lessonContentMd": "## PYTHON Stage 45\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 45. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 46,
-      "title": "PYTHON Stage 46",
-      "questName": "Quest 46",
-      "lessonContentMd": "## PYTHON Stage 46\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 46. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 47,
-      "title": "PYTHON Stage 47",
-      "questName": "Quest 47",
-      "lessonContentMd": "## PYTHON Stage 47\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 47. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 48,
-      "title": "PYTHON Stage 48",
-      "questName": "Quest 48",
-      "lessonContentMd": "## PYTHON Stage 48\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 48. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 49,
-      "title": "PYTHON Stage 49",
-      "questName": "Quest 49",
-      "lessonContentMd": "## PYTHON Stage 49\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 49. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 50,
-      "title": "PYTHON Stage 50",
-      "questName": "Quest 50",
-      "lessonContentMd": "## PYTHON Stage 50\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 50. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 51,
-      "title": "PYTHON Stage 51",
-      "questName": "Quest 51",
-      "lessonContentMd": "## PYTHON Stage 51\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 51. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 52,
-      "title": "PYTHON Stage 52",
-      "questName": "Quest 52",
-      "lessonContentMd": "## PYTHON Stage 52\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 52. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 53,
-      "title": "PYTHON Stage 53",
-      "questName": "Quest 53",
-      "lessonContentMd": "## PYTHON Stage 53\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 53. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 54,
-      "title": "PYTHON Stage 54",
-      "questName": "Quest 54",
-      "lessonContentMd": "## PYTHON Stage 54\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 54. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 55,
-      "title": "PYTHON Stage 55",
-      "questName": "Quest 55",
-      "lessonContentMd": "## PYTHON Stage 55\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 55. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 56,
-      "title": "PYTHON Stage 56",
-      "questName": "Quest 56",
-      "lessonContentMd": "## PYTHON Stage 56\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 56. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 57,
-      "title": "PYTHON Stage 57",
-      "questName": "Quest 57",
-      "lessonContentMd": "## PYTHON Stage 57\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 57. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 58,
-      "title": "PYTHON Stage 58",
-      "questName": "Quest 58",
-      "lessonContentMd": "## PYTHON Stage 58\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 58. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 59,
-      "title": "PYTHON Stage 59",
-      "questName": "Quest 59",
-      "lessonContentMd": "## PYTHON Stage 59\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 59. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 60,
-      "title": "PYTHON Stage 60",
-      "questName": "Quest 60",
-      "lessonContentMd": "## PYTHON Stage 60\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 60. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 61,
-      "title": "PYTHON Stage 61",
-      "questName": "Quest 61",
-      "lessonContentMd": "## PYTHON Stage 61\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 61. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 62,
-      "title": "PYTHON Stage 62",
-      "questName": "Quest 62",
-      "lessonContentMd": "## PYTHON Stage 62\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 62. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 63,
-      "title": "PYTHON Stage 63",
-      "questName": "Quest 63",
-      "lessonContentMd": "## PYTHON Stage 63\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 63. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 64,
-      "title": "PYTHON Stage 64",
-      "questName": "Quest 64",
-      "lessonContentMd": "## PYTHON Stage 64\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 64. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 65,
-      "title": "PYTHON Stage 65",
-      "questName": "Quest 65",
-      "lessonContentMd": "## PYTHON Stage 65\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 65. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 66,
-      "title": "PYTHON Stage 66",
-      "questName": "Quest 66",
-      "lessonContentMd": "## PYTHON Stage 66\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 66. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 67,
-      "title": "PYTHON Stage 67",
-      "questName": "Quest 67",
-      "lessonContentMd": "## PYTHON Stage 67\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 67. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "71",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "-2 4",
+          "expectedOutput": "-4 8",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000

@@ -4,36 +4,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 1,
-      "title": "GIT Stage 1",
-      "questName": "Quest 1",
-      "lessonContentMd": "## GIT Stage 1\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 1. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Repository Initialization",
+      "questName": "Genesis Repository",
+      "topic": "Repository Setup",
+      "concept": "Initializing a new Git repository using git init",
+      "prerequisites": [],
+      "learningObjectives": [
+        "Create a new Git repository in a directory using git init"
+      ],
+      "lessonContentMd": "## Initializing a Git Repository\n\nTo turn any local directory into a Git repository, use the `git init` command. This creates a hidden `.git` directory containing all tracking metadata and object storage for your project.\n\n```bash\ngit init\n```",
+      "problemStatementMd": "## Genesis Repository\n\nWrite a shell command to initialize a new Git repository in the current directory.",
+      "constraints": "Standard bash environment",
+      "inputFormat": "None",
+      "outputFormat": "Command output confirming repository initialization",
+      "examples": [
+        {
+          "input": "",
+          "output": "Initialized empty Git repository",
+          "explanation": "Runs git init."
+        }
+      ],
+      "starterCode": "# Write the command to initialize a git repository\n",
+      "solutionCode": "git init\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Initialized empty Git repository in /tmp/test/.git/",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Initialized empty Git repository in /tmp/test/.git/",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -43,36 +52,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 2,
-      "title": "GIT Stage 2",
-      "questName": "Quest 2",
-      "lessonContentMd": "## GIT Stage 2\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 2. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Staging Changes",
+      "questName": "Staging Ground",
+      "topic": "Basic Workflow",
+      "concept": "Adding files to the staging area using git add",
+      "prerequisites": ["Initializing a new Git repository using git init"],
+      "learningObjectives": [
+        "Stage files for commit using git add <filename>"
+      ],
+      "lessonContentMd": "## Staging Files in Git\n\nBefore recording a snapshot in Git, modified or newly created files must be added to the staging area (also known as the index) using `git add`.\n\n```bash\ngit add index.html\ngit add .\n```",
+      "problemStatementMd": "## Staging Ground\n\nWrite a command to stage all modified and untracked files in the current working directory.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Command output",
+      "examples": [
+        {
+          "input": "",
+          "output": "",
+          "explanation": "Stages all files with git add ."
+        }
+      ],
+      "starterCode": "# Write command to stage all files\n",
+      "solutionCode": "git add .\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -82,36 +100,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 3,
-      "title": "GIT Stage 3",
-      "questName": "Quest 3",
-      "lessonContentMd": "## GIT Stage 3\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 3. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Committing Changes",
+      "questName": "First Record",
+      "topic": "Basic Workflow",
+      "concept": "Recording staged snapshots using git commit",
+      "prerequisites": ["Adding files to the staging area using git add"],
+      "learningObjectives": [
+        "Create a commit with a descriptive message using git commit -m"
+      ],
+      "lessonContentMd": "## Committing Changes\n\nSave staged changes permanently into the repository history with an inline commit message using `git commit -m \"message\"`.\n\n```bash\ngit commit -m \"Initial commit\"\n```",
+      "problemStatementMd": "## First Record\n\nWrite a command to commit staged changes with the message `\"Initial commit\"`.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Commit summary output",
+      "examples": [
+        {
+          "input": "",
+          "output": "Initial commit",
+          "explanation": "Commits staged files with message."
+        }
+      ],
+      "starterCode": "# Write command to commit with message 'Initial commit'\n",
+      "solutionCode": "git commit -m \"Initial commit\"\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "[main (root-commit) 1234567] Initial commit",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "[main (root-commit) 1234567] Initial commit",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -121,36 +148,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 4,
-      "title": "GIT Stage 4",
-      "questName": "Quest 4",
-      "lessonContentMd": "## GIT Stage 4\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 4. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Checking Status",
+      "questName": "Reconnaissance",
+      "topic": "Inspection",
+      "concept": "Inspecting working tree status using git status",
+      "prerequisites": ["Recording staged snapshots using git commit"],
+      "learningObjectives": [
+        "Check staged, untracked, and modified file states with git status"
+      ],
+      "lessonContentMd": "## Checking Repository Status\n\nThe `git status` command displays the state of the working directory and the staging area. It shows which changes have been staged, which haven't, and which files aren't being tracked by Git.\n\n```bash\ngit status\n```",
+      "problemStatementMd": "## Reconnaissance\n\nWrite the command to display the state of the working directory and staging area.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Status output",
+      "examples": [
+        {
+          "input": "",
+          "output": "On branch main",
+          "explanation": "Runs git status."
+        }
+      ],
+      "starterCode": "# Write command to check git status\n",
+      "solutionCode": "git status\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "On branch main\nnothing to commit, working tree clean",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "On branch main\nnothing to commit, working tree clean",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -160,36 +196,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 5,
-      "title": "GIT Stage 5",
-      "questName": "Quest 5",
-      "lessonContentMd": "## GIT Stage 5\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 5. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Commit Log & History",
+      "questName": "Chronicles of Code",
+      "topic": "Inspection",
+      "concept": "Viewing commit history with git log",
+      "prerequisites": ["Inspecting working tree status using git status"],
+      "learningObjectives": [
+        "View historical commit history using git log"
+      ],
+      "lessonContentMd": "## Viewing Commit History\n\nThe `git log` command shows committed snapshots. Adding `--oneline` formats each commit into a single condensed line showing the short hash and commit message.\n\n```bash\ngit log --oneline\n```",
+      "problemStatementMd": "## Chronicles of Code\n\nWrite a command to view compact, one-line commit history.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "One-line log output",
+      "examples": [
+        {
+          "input": "",
+          "output": "1234567 Initial commit",
+          "explanation": "Runs git log --oneline."
+        }
+      ],
+      "starterCode": "# Write command to view compact commit history\n",
+      "solutionCode": "git log --oneline\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "1234567 Initial commit",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "1234567 Initial commit",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -199,36 +244,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 6,
-      "title": "GIT Stage 6",
-      "questName": "Quest 6",
-      "lessonContentMd": "## GIT Stage 6\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 6. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Branch Creation",
+      "questName": "Parallel Timeline",
+      "topic": "Branching",
+      "concept": "Creating feature branches with git branch",
+      "prerequisites": ["Viewing commit history with git log"],
+      "learningObjectives": [
+        "Create new branches using git branch <name>"
+      ],
+      "lessonContentMd": "## Creating Branches\n\nBranches allow isolating development work without affecting the primary production branch. Use `git branch <branch-name>` to create a new branch pointer at your current HEAD.\n\n```bash\ngit branch feature-login\n```",
+      "problemStatementMd": "## Parallel Timeline\n\nWrite a command to create a new branch named `feature`.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Command output",
+      "examples": [
+        {
+          "input": "",
+          "output": "",
+          "explanation": "Creates branch named feature."
+        }
+      ],
+      "starterCode": "# Write command to create branch 'feature'\n",
+      "solutionCode": "git branch feature\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -238,36 +292,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 7,
-      "title": "GIT Stage 7",
-      "questName": "Quest 7",
-      "lessonContentMd": "## GIT Stage 7\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 7. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Switching Branches",
+      "questName": "Dimensional Shift",
+      "topic": "Branching",
+      "concept": "Switching branches using git checkout or git switch",
+      "prerequisites": ["Creating new branches using git branch <name>"],
+      "learningObjectives": [
+        "Switch working branches using git switch <name>"
+      ],
+      "lessonContentMd": "## Switching Branches\n\nTo move your HEAD pointer and working files to another branch, use `git checkout <branch-name>` or the modern `git switch <branch-name>` command.\n\n```bash\ngit checkout feature\n```",
+      "problemStatementMd": "## Dimensional Shift\n\nWrite a command to switch to an existing branch named `feature`.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Switched to branch 'feature'",
+      "examples": [
+        {
+          "input": "",
+          "output": "Switched to branch 'feature'",
+          "explanation": "Switches working directory to feature branch."
+        }
+      ],
+      "starterCode": "# Write command to switch to branch 'feature'\n",
+      "solutionCode": "git checkout feature\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Switched to branch 'feature'",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Switched to branch 'feature'",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -277,36 +340,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 8,
-      "title": "GIT Stage 8",
-      "questName": "Quest 8",
-      "lessonContentMd": "## GIT Stage 8\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 8. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Merging Branches",
+      "questName": "Convergence",
+      "topic": "Branching",
+      "concept": "Merging branch histories using git merge",
+      "prerequisites": ["Switching working branches using git switch <name>"],
+      "learningObjectives": [
+        "Merge target branch changes into current branch using git merge"
+      ],
+      "lessonContentMd": "## Merging Branches\n\nTo integrate changes from another branch into your active working branch, run `git merge <target-branch>`:\n\n```bash\ngit checkout main\ngit merge feature\n```",
+      "problemStatementMd": "## Convergence\n\nWrite the command to merge the `feature` branch into your currently checked out branch.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Merge output summary",
+      "examples": [
+        {
+          "input": "",
+          "output": "Updating 1234567..89abcde\nFast-forward",
+          "explanation": "Merges feature branch."
+        }
+      ],
+      "starterCode": "# Write command to merge branch 'feature'\n",
+      "solutionCode": "git merge feature\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Updating 1234567..89abcde\nFast-forward",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Updating 1234567..89abcde\nFast-forward",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -316,36 +388,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 9,
-      "title": "GIT Stage 9",
-      "questName": "Quest 9",
-      "lessonContentMd": "## GIT Stage 9\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 9. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Remote Repositories",
+      "questName": "Uplink Connection",
+      "topic": "Remotes",
+      "concept": "Managing remote links with git remote add",
+      "prerequisites": ["Recording staged snapshots using git commit"],
+      "learningObjectives": [
+        "Add a remote repository shortcut using git remote add"
+      ],
+      "lessonContentMd": "## Adding Remote Repositories\n\nTo connect your local repository to a remote server (like GitHub or GitLab), use `git remote add <name> <url>` to create a named alias for the remote repository URL.\n\n```bash\ngit remote add origin https://github.com/user/repo.git\n```",
+      "problemStatementMd": "## Uplink Connection\n\nWrite a command to add a remote named `origin` pointing to URL `https://github.com/org/repo.git`.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Command output",
+      "examples": [
+        {
+          "input": "",
+          "output": "",
+          "explanation": "Adds remote origin."
+        }
+      ],
+      "starterCode": "# Write command to add remote origin\n",
+      "solutionCode": "git remote add origin https://github.com/org/repo.git\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -355,2259 +436,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 10,
-      "title": "GIT Stage 10",
-      "questName": "Quest 10",
-      "lessonContentMd": "## GIT Stage 10\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 10. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
+      "title": "Pushing Changes",
+      "questName": "Orbital Upload",
+      "topic": "Remotes",
+      "concept": "Uploading local commits to remote with git push",
+      "prerequisites": ["Add a remote repository shortcut using git remote add"],
+      "learningObjectives": [
+        "Push local branch commits to remote repository using git push"
+      ],
+      "lessonContentMd": "## Pushing to Remote Repositories\n\nUpload local branch commits to your remote repository using `git push <remote-name> <branch-name>`. This synchronizes your local history with the shared remote server.\n\n```bash\ngit push origin main\n```",
+      "problemStatementMd": "## Orbital Upload\n\nWrite a command to push the local `main` branch to the remote repository named `origin`.",
+      "constraints": "Standard bash",
+      "inputFormat": "None",
+      "outputFormat": "Push output status",
+      "examples": [
         {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
+          "input": "",
+          "output": "Everything up-to-date",
+          "explanation": "Pushes main branch to origin."
         }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 11,
-      "title": "GIT Stage 11",
-      "questName": "Quest 11",
-      "lessonContentMd": "## GIT Stage 11\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 11. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      ],
+      "starterCode": "# Write command to push main to origin\n",
+      "solutionCode": "git push origin main\n",
       "exerciseType": "coding-challenge",
       "languageId": "46",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Everything up-to-date",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 12,
-      "title": "GIT Stage 12",
-      "questName": "Quest 12",
-      "lessonContentMd": "## GIT Stage 12\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 12. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 13,
-      "title": "GIT Stage 13",
-      "questName": "Quest 13",
-      "lessonContentMd": "## GIT Stage 13\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 13. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 14,
-      "title": "GIT Stage 14",
-      "questName": "Quest 14",
-      "lessonContentMd": "## GIT Stage 14\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 14. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "cadet",
-      "stageNumber": 15,
-      "title": "GIT Stage 15",
-      "questName": "Quest 15",
-      "lessonContentMd": "## GIT Stage 15\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 15. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 16,
-      "title": "GIT Stage 16",
-      "questName": "Quest 16",
-      "lessonContentMd": "## GIT Stage 16\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 16. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 17,
-      "title": "GIT Stage 17",
-      "questName": "Quest 17",
-      "lessonContentMd": "## GIT Stage 17\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 17. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 18,
-      "title": "GIT Stage 18",
-      "questName": "Quest 18",
-      "lessonContentMd": "## GIT Stage 18\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 18. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 19,
-      "title": "GIT Stage 19",
-      "questName": "Quest 19",
-      "lessonContentMd": "## GIT Stage 19\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 19. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 20,
-      "title": "GIT Stage 20",
-      "questName": "Quest 20",
-      "lessonContentMd": "## GIT Stage 20\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 20. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 21,
-      "title": "GIT Stage 21",
-      "questName": "Quest 21",
-      "lessonContentMd": "## GIT Stage 21\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 21. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 22,
-      "title": "GIT Stage 22",
-      "questName": "Quest 22",
-      "lessonContentMd": "## GIT Stage 22\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 22. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 23,
-      "title": "GIT Stage 23",
-      "questName": "Quest 23",
-      "lessonContentMd": "## GIT Stage 23\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 23. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 24,
-      "title": "GIT Stage 24",
-      "questName": "Quest 24",
-      "lessonContentMd": "## GIT Stage 24\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 24. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 25,
-      "title": "GIT Stage 25",
-      "questName": "Quest 25",
-      "lessonContentMd": "## GIT Stage 25\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 25. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 26,
-      "title": "GIT Stage 26",
-      "questName": "Quest 26",
-      "lessonContentMd": "## GIT Stage 26\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 26. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 27,
-      "title": "GIT Stage 27",
-      "questName": "Quest 27",
-      "lessonContentMd": "## GIT Stage 27\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 27. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 28,
-      "title": "GIT Stage 28",
-      "questName": "Quest 28",
-      "lessonContentMd": "## GIT Stage 28\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 28. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 29,
-      "title": "GIT Stage 29",
-      "questName": "Quest 29",
-      "lessonContentMd": "## GIT Stage 29\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 29. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 30,
-      "title": "GIT Stage 30",
-      "questName": "Quest 30",
-      "lessonContentMd": "## GIT Stage 30\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 30. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 31,
-      "title": "GIT Stage 31",
-      "questName": "Quest 31",
-      "lessonContentMd": "## GIT Stage 31\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 31. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 32,
-      "title": "GIT Stage 32",
-      "questName": "Quest 32",
-      "lessonContentMd": "## GIT Stage 32\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 32. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 33,
-      "title": "GIT Stage 33",
-      "questName": "Quest 33",
-      "lessonContentMd": "## GIT Stage 33\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 33. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 34,
-      "title": "GIT Stage 34",
-      "questName": "Quest 34",
-      "lessonContentMd": "## GIT Stage 34\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 34. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 35,
-      "title": "GIT Stage 35",
-      "questName": "Quest 35",
-      "lessonContentMd": "## GIT Stage 35\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 35. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 36,
-      "title": "GIT Stage 36",
-      "questName": "Quest 36",
-      "lessonContentMd": "## GIT Stage 36\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 36. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 37,
-      "title": "GIT Stage 37",
-      "questName": "Quest 37",
-      "lessonContentMd": "## GIT Stage 37\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 37. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 38,
-      "title": "GIT Stage 38",
-      "questName": "Quest 38",
-      "lessonContentMd": "## GIT Stage 38\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 38. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 39,
-      "title": "GIT Stage 39",
-      "questName": "Quest 39",
-      "lessonContentMd": "## GIT Stage 39\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 39. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 40,
-      "title": "GIT Stage 40",
-      "questName": "Quest 40",
-      "lessonContentMd": "## GIT Stage 40\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 40. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 41,
-      "title": "GIT Stage 41",
-      "questName": "Quest 41",
-      "lessonContentMd": "## GIT Stage 41\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 41. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 42,
-      "title": "GIT Stage 42",
-      "questName": "Quest 42",
-      "lessonContentMd": "## GIT Stage 42\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 42. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 43,
-      "title": "GIT Stage 43",
-      "questName": "Quest 43",
-      "lessonContentMd": "## GIT Stage 43\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 43. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 44,
-      "title": "GIT Stage 44",
-      "questName": "Quest 44",
-      "lessonContentMd": "## GIT Stage 44\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 44. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 45,
-      "title": "GIT Stage 45",
-      "questName": "Quest 45",
-      "lessonContentMd": "## GIT Stage 45\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 45. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 46,
-      "title": "GIT Stage 46",
-      "questName": "Quest 46",
-      "lessonContentMd": "## GIT Stage 46\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 46. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 47,
-      "title": "GIT Stage 47",
-      "questName": "Quest 47",
-      "lessonContentMd": "## GIT Stage 47\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 47. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 48,
-      "title": "GIT Stage 48",
-      "questName": "Quest 48",
-      "lessonContentMd": "## GIT Stage 48\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 48. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 49,
-      "title": "GIT Stage 49",
-      "questName": "Quest 49",
-      "lessonContentMd": "## GIT Stage 49\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 49. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 50,
-      "title": "GIT Stage 50",
-      "questName": "Quest 50",
-      "lessonContentMd": "## GIT Stage 50\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 50. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 51,
-      "title": "GIT Stage 51",
-      "questName": "Quest 51",
-      "lessonContentMd": "## GIT Stage 51\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 51. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 52,
-      "title": "GIT Stage 52",
-      "questName": "Quest 52",
-      "lessonContentMd": "## GIT Stage 52\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 52. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 53,
-      "title": "GIT Stage 53",
-      "questName": "Quest 53",
-      "lessonContentMd": "## GIT Stage 53\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 53. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 54,
-      "title": "GIT Stage 54",
-      "questName": "Quest 54",
-      "lessonContentMd": "## GIT Stage 54\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 54. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 55,
-      "title": "GIT Stage 55",
-      "questName": "Quest 55",
-      "lessonContentMd": "## GIT Stage 55\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 55. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 56,
-      "title": "GIT Stage 56",
-      "questName": "Quest 56",
-      "lessonContentMd": "## GIT Stage 56\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 56. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 57,
-      "title": "GIT Stage 57",
-      "questName": "Quest 57",
-      "lessonContentMd": "## GIT Stage 57\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 57. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 58,
-      "title": "GIT Stage 58",
-      "questName": "Quest 58",
-      "lessonContentMd": "## GIT Stage 58\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 58. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 59,
-      "title": "GIT Stage 59",
-      "questName": "Quest 59",
-      "lessonContentMd": "## GIT Stage 59\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 59. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 60,
-      "title": "GIT Stage 60",
-      "questName": "Quest 60",
-      "lessonContentMd": "## GIT Stage 60\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 60. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 61,
-      "title": "GIT Stage 61",
-      "questName": "Quest 61",
-      "lessonContentMd": "## GIT Stage 61\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 61. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 62,
-      "title": "GIT Stage 62",
-      "questName": "Quest 62",
-      "lessonContentMd": "## GIT Stage 62\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 62. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 63,
-      "title": "GIT Stage 63",
-      "questName": "Quest 63",
-      "lessonContentMd": "## GIT Stage 63\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 63. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 64,
-      "title": "GIT Stage 64",
-      "questName": "Quest 64",
-      "lessonContentMd": "## GIT Stage 64\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 64. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 65,
-      "title": "GIT Stage 65",
-      "questName": "Quest 65",
-      "lessonContentMd": "## GIT Stage 65\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 65. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 66,
-      "title": "GIT Stage 66",
-      "questName": "Quest 66",
-      "lessonContentMd": "## GIT Stage 66\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 66. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 67,
-      "title": "GIT Stage 67",
-      "questName": "Quest 67",
-      "lessonContentMd": "## GIT Stage 67\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 67. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "46",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Everything up-to-date",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000

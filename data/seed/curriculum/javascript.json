@@ -4,36 +4,45 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 1,
-      "title": "JAVASCRIPT Stage 1",
-      "questName": "Quest 1",
-      "lessonContentMd": "## JAVASCRIPT Stage 1\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 1. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Console Output",
+      "questName": "The Node Signal",
+      "topic": "Fundamentals",
+      "concept": "Console output using console.log",
+      "prerequisites": [],
+      "learningObjectives": [
+        "Use console.log to output strings to standard output"
+      ],
+      "lessonContentMd": "## Console Output in JavaScript\n\nIn JavaScript (Node.js environment), outputting data to the terminal is done via `console.log()`.\n\n```javascript\nconsole.log(\"Hello, JavaScript!\");\n```",
+      "problemStatementMd": "## The Node Signal\n\nTransmit the initialization code by printing the exact string: `Hello, World!`",
+      "constraints": "None",
+      "inputFormat": "No input",
+      "outputFormat": "Single line: Hello, World!",
+      "examples": [
+        {
+          "input": "",
+          "output": "Hello, World!",
+          "explanation": "Outputs string to console."
+        }
+      ],
+      "starterCode": "// Print 'Hello, World!' to console\n",
+      "solutionCode": "console.log('Hello, World!');\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "Hello, World!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "Hello, World!",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -43,36 +52,46 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 2,
-      "title": "JAVASCRIPT Stage 2",
-      "questName": "Quest 2",
-      "lessonContentMd": "## JAVASCRIPT Stage 2\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 2. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Variable Declarations",
+      "questName": "Constant Memory",
+      "topic": "Fundamentals",
+      "concept": "Variable assignment with let and const",
+      "prerequisites": ["Console output using console.log"],
+      "learningObjectives": [
+        "Understand constant variables with const",
+        "Understand reassignable variables with let"
+      ],
+      "lessonContentMd": "## Variables in JavaScript\n\nModern JavaScript uses `const` for variables that should not be reassigned, and `let` for variables that will change.\n\n```javascript\nconst maxScore = 100;\nlet currentScore = 0;\ncurrentScore += 10;\n```",
+      "problemStatementMd": "## Constant Memory\n\nDeclare a constant variable `speed` equal to `42`. Print `speed` to the console.",
+      "constraints": "None",
+      "inputFormat": "No input",
+      "outputFormat": "Single line: 42",
+      "examples": [
+        {
+          "input": "",
+          "output": "42",
+          "explanation": "Prints 42."
+        }
+      ],
+      "starterCode": "// Define constant speed and print it\n",
+      "solutionCode": "const speed = 42;\nconsole.log(speed);\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "",
+          "expectedOutput": "42",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "",
+          "expectedOutput": "42",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -82,36 +101,54 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 3,
-      "title": "JAVASCRIPT Stage 3",
-      "questName": "Quest 3",
-      "lessonContentMd": "## JAVASCRIPT Stage 3\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 3. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Reading Input & Parsing",
+      "questName": "Input Stream Reader",
+      "topic": "Input & Output",
+      "concept": "Reading stdin in Node.js and parsing integers",
+      "prerequisites": ["Variable assignment with let and const"],
+      "learningObjectives": [
+        "Read input from process.stdin or fs.readFileSync",
+        "Parse integer strings using parseInt()"
+      ],
+      "lessonContentMd": "## Reading Input in Node.js\n\nIn Node.js coding environments, input is read from `/dev/stdin` or `process.stdin`.\n\n```javascript\nconst fs = require('fs');\nconst input = fs.readFileSync(0, 'utf-8').trim();\nconst num = parseInt(input, 10);\n```",
+      "problemStatementMd": "## Input Stream Reader\n\nRead an integer `n` from stdin. Print `n + 10`.",
+      "constraints": "0 <= n <= 1000",
+      "inputFormat": "Single integer n on stdin",
+      "outputFormat": "Single integer representing n + 10",
+      "examples": [
+        {
+          "input": "5",
+          "output": "15",
+          "explanation": "5 + 10 = 15"
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst input = fs.readFileSync(0, 'utf-8').trim();\n// Parse integer and add 10\n",
+      "solutionCode": "const fs = require('fs');\nconst input = fs.readFileSync(0, 'utf-8').trim();\nconst n = parseInt(input, 10);\nconsole.log(n + 10);\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "5",
+          "expectedOutput": "15",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "100",
+          "expectedOutput": "110",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "0",
+          "expectedOutput": "10",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -121,19 +158,36 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 4,
-      "title": "JAVASCRIPT Stage 4",
-      "questName": "Quest 4",
-      "lessonContentMd": "## JAVASCRIPT Stage 4\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 4. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Arithmetic & Modulo",
+      "questName": "Modulo Shield",
+      "topic": "Operators",
+      "concept": "Arithmetic operations and the remainder operator %",
+      "prerequisites": ["Reading stdin in Node.js and parsing integers"],
+      "learningObjectives": [
+        "Use mathematical operators +, -, *, /, %"
+      ],
+      "lessonContentMd": "## Arithmetic Operators\n\nJavaScript supports standard math operators:\n- `+`, `-`, `*`, `/`\n- `%` Modulo (remainder of division)\n\n```javascript\nconsole.log(10 % 3); // 1\n```",
+      "problemStatementMd": "## Modulo Shield\n\nRead two space-separated integers `a` and `b`. Print `a % b`.",
+      "constraints": "1 <= a, b <= 1000",
+      "inputFormat": "Two space-separated integers on one line",
+      "outputFormat": "Remainder of a / b",
+      "examples": [
+        {
+          "input": "10 3",
+          "output": "1",
+          "explanation": "10 % 3 = 1"
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst [a, b] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\n// Print a % b\n",
+      "solutionCode": "const fs = require('fs');\nconst [a, b] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconsole.log(a % b);\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
+          "input": "10 3",
           "expectedOutput": "1",
           "isHidden": false,
           "timeLimitMs": 5000,
@@ -141,16 +195,16 @@
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "25 5",
+          "expectedOutput": "0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "14 4",
+          "expectedOutput": "2",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -160,36 +214,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 5,
-      "title": "JAVASCRIPT Stage 5",
-      "questName": "Quest 5",
-      "lessonContentMd": "## JAVASCRIPT Stage 5\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 5. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Template Literals",
+      "questName": "Holodeck Formatter",
+      "topic": "Strings",
+      "concept": "String interpolation using backtick template literals",
+      "prerequisites": ["Variable assignment with let and const"],
+      "learningObjectives": [
+        "Embed expressions inside strings using `${expression}`"
+      ],
+      "lessonContentMd": "## Template Literals\n\nTemplate literals use backticks (`` ` ``) instead of quotes and allow embedding expressions inside `${}`:\n\n```javascript\nconst hero = \"Neo\";\nconst level = 42;\nconsole.log(`Agent ${hero} reached level ${level}.`);\n```",
+      "problemStatementMd": "## Holodeck Formatter\n\nRead a name from input. Output `GREETINGS, <NAME>!` using template literals.",
+      "constraints": "Name length 1 to 50 characters",
+      "inputFormat": "Single line string",
+      "outputFormat": "GREETINGS, <NAME>!",
+      "examples": [
+        {
+          "input": "Coder",
+          "output": "GREETINGS, CODER!",
+          "explanation": "Embeds input into formatted string."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst name = fs.readFileSync(0, 'utf-8').trim();\n// Format and print greeting\n",
+      "solutionCode": "const fs = require('fs');\nconst name = fs.readFileSync(0, 'utf-8').trim();\nconsole.log(`GREETINGS, ${name.toUpperCase()}!`);\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "Coder",
+          "expectedOutput": "GREETINGS, CODER!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "Developer",
+          "expectedOutput": "GREETINGS, DEVELOPER!",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "User",
+          "expectedOutput": "GREETINGS, USER!",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -199,36 +270,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 6,
-      "title": "JAVASCRIPT Stage 6",
-      "questName": "Quest 6",
-      "lessonContentMd": "## JAVASCRIPT Stage 6\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 6. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Conditional Statements",
+      "questName": "Gatekeeper Protocol",
+      "topic": "Control Flow",
+      "concept": "if, else if, and else branching",
+      "prerequisites": ["Reading stdin in Node.js and parsing integers"],
+      "learningObjectives": [
+        "Control execution using if and else statements"
+      ],
+      "lessonContentMd": "## Conditionals in JavaScript\n\n```javascript\nconst score = 85;\nif (score >= 70) {\n  console.log(\"PASS\");\n} else {\n  console.log(\"FAIL\");\n}\n```",
+      "problemStatementMd": "## Gatekeeper Protocol\n\nRead an integer score `n`. Print `PASS` if `n >= 50`, otherwise print `FAIL`.",
+      "constraints": "0 <= n <= 100",
+      "inputFormat": "A single integer n",
+      "outputFormat": "PASS or FAIL",
+      "examples": [
+        {
+          "input": "75",
+          "output": "PASS",
+          "explanation": "75 >= 50"
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\n// Check condition\n",
+      "solutionCode": "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\nif (n >= 50) {\n  console.log(\"PASS\");\n} else {\n  console.log(\"FAIL\");\n}\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "75",
+          "expectedOutput": "PASS",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "40",
+          "expectedOutput": "FAIL",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "50",
+          "expectedOutput": "PASS",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -238,36 +326,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 7,
-      "title": "JAVASCRIPT Stage 7",
-      "questName": "Quest 7",
-      "lessonContentMd": "## JAVASCRIPT Stage 7\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 7. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Strict Equality & Logic",
+      "questName": "Authentication Key",
+      "topic": "Control Flow",
+      "concept": "Strict equality operator === and logical && / ||",
+      "prerequisites": ["Control execution using if and else statements"],
+      "learningObjectives": [
+        "Use strict equality === and logical operators && and ||"
+      ],
+      "lessonContentMd": "## Strict Equality & Logical Operators\n\nAlways use `===` for strict comparison (checks type and value).\n\n```javascript\nif (role === \"admin\" && status === \"active\") {\n  console.log(\"FULL ACCESS\");\n}\n```",
+      "problemStatementMd": "## Authentication Key\n\nRead two space-separated strings `role` and `status`. Print `GRANTED` if `role === \"admin\"` AND `status === \"active\"`. Otherwise print `DENIED`.",
+      "constraints": "Alphanumeric strings",
+      "inputFormat": "Two space-separated strings",
+      "outputFormat": "GRANTED or DENIED",
+      "examples": [
+        {
+          "input": "admin active",
+          "output": "GRANTED",
+          "explanation": "Both conditions met."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst [role, status] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\n// Evaluate authentication\n",
+      "solutionCode": "const fs = require('fs');\nconst [role, status] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\nif (role === \"admin\" && status === \"active\") {\n  console.log(\"GRANTED\");\n} else {\n  console.log(\"DENIED\");\n}\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "admin active",
+          "expectedOutput": "GRANTED",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "guest active",
+          "expectedOutput": "DENIED",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "admin inactive",
+          "expectedOutput": "DENIED",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -277,18 +382,43 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 8,
-      "title": "JAVASCRIPT Stage 8",
-      "questName": "Quest 8",
-      "lessonContentMd": "## JAVASCRIPT Stage 8\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 8. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "For Loops",
+      "questName": "Iteration Matrix",
+      "topic": "Loops & Iteration",
+      "concept": "Standard for loops for iteration",
+      "prerequisites": ["Control execution using if and else statements"],
+      "learningObjectives": [
+        "Construct standard for loops for(let i = 0; i < n; i++)"
+      ],
+      "lessonContentMd": "## For Loops in JavaScript\n\nA `for` loop repeatedly executes a block of code a set number of times using an initializer, a condition, and a final expression.\n\n```javascript\nfor (let i = 1; i <= 3; i++) {\n  console.log(i);\n}\n```",
+      "problemStatementMd": "## Iteration Matrix\n\nRead an integer `n`. Print numbers from `1` up to `n`, each on a new line.",
+      "constraints": "1 <= n <= 100",
+      "inputFormat": "Single integer n",
+      "outputFormat": "Integers 1 to n, each on a new line",
+      "examples": [
+        {
+          "input": "3",
+          "output": "1\n2\n3",
+          "explanation": "Iterates 1 to 3."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\n// Run loop from 1 to n\n",
+      "solutionCode": "const fs = require('fs');\nconst n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\nfor (let i = 1; i <= n; i++) {\n  console.log(i);\n}\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
+          "input": "3",
+          "expectedOutput": "1\n2\n3",
+          "isHidden": false,
+          "timeLimitMs": 5000,
+          "memoryLimitKb": 128000
+        },
+        {
+          "testNumber": 2,
           "input": "1",
           "expectedOutput": "1",
           "isHidden": false,
@@ -296,17 +426,9 @@
           "memoryLimitKb": 128000
         },
         {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "5",
+          "expectedOutput": "1\n2\n3\n4\n5",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -316,36 +438,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 9,
-      "title": "JAVASCRIPT Stage 9",
-      "questName": "Quest 9",
-      "lessonContentMd": "## JAVASCRIPT Stage 9\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 9. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "While Loops",
+      "questName": "Decay Loop",
+      "topic": "Loops & Iteration",
+      "concept": "Conditional iteration with while loops",
+      "prerequisites": ["Construct standard for loops for(let i = 0; i < n; i++)"],
+      "learningObjectives": [
+        "Construct while (condition) loops"
+      ],
+      "lessonContentMd": "## While Loops\n\n```javascript\nlet count = 5;\nwhile (count > 0) {\n  console.log(count);\n  count--;\n}\n```",
+      "problemStatementMd": "## Decay Loop\n\nRead an integer `n`. Repeatedly divide `n` by `2` (using `Math.floor(n / 2)`) and print `n` after each division until `n` becomes `0`.",
+      "constraints": "1 <= n <= 1000",
+      "inputFormat": "Single integer n",
+      "outputFormat": "Values of n after each step until 0",
+      "examples": [
+        {
+          "input": "8",
+          "output": "4\n2\n1\n0",
+          "explanation": "8/2=4, 4/2=2, 2/2=1, 1/2=0."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nlet n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\n// Implement while loop\n",
+      "solutionCode": "const fs = require('fs');\nlet n = parseInt(fs.readFileSync(0, 'utf-8').trim(), 10);\nwhile (n > 0) {\n  n = Math.floor(n / 2);\n  console.log(n);\n}\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "8",
+          "expectedOutput": "4\n2\n1\n0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "1",
+          "expectedOutput": "0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "10",
+          "expectedOutput": "5\n2\n1\n0",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -355,36 +494,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 10,
-      "title": "JAVASCRIPT Stage 10",
-      "questName": "Quest 10",
-      "lessonContentMd": "## JAVASCRIPT Stage 10\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 10. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Arrays & Indexing",
+      "questName": "Data Array",
+      "topic": "Data Structures",
+      "concept": "Array creation, length property, and element indexing",
+      "prerequisites": ["Construct standard for loops for(let i = 0; i < n; i++)"],
+      "learningObjectives": [
+        "Access array elements via 0-based index and measure size using array.length"
+      ],
+      "lessonContentMd": "## Arrays in JavaScript\n\n```javascript\nconst arr = [10, 20, 30];\nconsole.log(arr.length); // 3\nconsole.log(arr[0]);     // 10\nconsole.log(arr[arr.length - 1]); // 30\n```",
+      "problemStatementMd": "## Data Array\n\nRead space-separated numbers into an array. Print:\n1. Array length\n2. First element\n3. Last element (each on a new line)",
+      "constraints": "Array contains 1 to 100 elements",
+      "inputFormat": "Space-separated elements",
+      "outputFormat": "Three lines: length, first, last",
+      "examples": [
+        {
+          "input": "10 20 30 40",
+          "output": "4\n10\n40",
+          "explanation": "Length 4, first 10, last 40."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst arr = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\n// Print length, first element, last element\n",
+      "solutionCode": "const fs = require('fs');\nconst arr = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\nif (arr.length > 0) {\n  console.log(arr.length);\n  console.log(arr[0]);\n  console.log(arr[arr.length - 1]);\n}\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "10 20 30 40",
+          "expectedOutput": "4\n10\n40",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "99",
+          "expectedOutput": "1\n99\n99",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "1 2 3 4 5",
+          "expectedOutput": "5\n1\n5",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -394,36 +550,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 11,
-      "title": "JAVASCRIPT Stage 11",
-      "questName": "Quest 11",
-      "lessonContentMd": "## JAVASCRIPT Stage 11\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 11. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Array Push & Join",
+      "questName": "Stack Operations",
+      "topic": "Data Structures",
+      "concept": "Adding elements with .push() and formatting output with .join()",
+      "prerequisites": ["Access array elements via 0-based index and measure size using array.length"],
+      "learningObjectives": [
+        "Mutate arrays using .push() and format output using .join(' ')"
+      ],
+      "lessonContentMd": "## Array Push & Join\n\n```javascript\nconst list = [];\nlist.push(\"A\");\nlist.push(\"B\");\nconsole.log(list.join(\"-\")); // \"A-B\"\n```",
+      "problemStatementMd": "## Stack Operations\n\nRead space-separated integers. Push each integer into a new array after adding `1` to it. Print the resulting array elements joined by spaces.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Space-separated integers",
+      "outputFormat": "Space-separated integers incremented by 1",
+      "examples": [
+        {
+          "input": "1 2 3",
+          "output": "2 3 4",
+          "explanation": "1+1=2, 2+1=3, 3+1=4."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\n// Build new array with push and join\n",
+      "solutionCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconst result = [];\nfor (const n of nums) {\n  result.push(n + 1);\n}\nconsole.log(result.join(' '));\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "1 2 3",
+          "expectedOutput": "2 3 4",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "0 9",
+          "expectedOutput": "1 10",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "-1 0 1",
+          "expectedOutput": "0 1 2",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -433,36 +606,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 12,
-      "title": "JAVASCRIPT Stage 12",
-      "questName": "Quest 12",
-      "lessonContentMd": "## JAVASCRIPT Stage 12\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 12. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Functions & Returns",
+      "questName": "Function Module",
+      "topic": "Functions",
+      "concept": "Function definitions and return values",
+      "prerequisites": ["Variable assignment with let and const"],
+      "learningObjectives": [
+        "Define functions with parameter lists and return values"
+      ],
+      "lessonContentMd": "## Functions in JavaScript\n\n```javascript\nfunction multiply(a, b) {\n  return a * b;\n}\nconsole.log(multiply(6, 7)); // 42\n```",
+      "problemStatementMd": "## Function Module\n\nDefine a function `add(a, b)` that returns `a + b`. Read two integers `x` and `y` from input, call `add(x, y)`, and print the result.",
+      "constraints": "1 <= x, y <= 1000",
+      "inputFormat": "Two space-separated integers",
+      "outputFormat": "Sum of x and y",
+      "examples": [
+        {
+          "input": "15 25",
+          "output": "40",
+          "explanation": "add(15, 25) returns 40."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nfunction add(a, b) {\n  // Return sum of a and b\n}\nconst [x, y] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconsole.log(add(x, y));\n",
+      "solutionCode": "const fs = require('fs');\nfunction add(a, b) {\n  return a + b;\n}\nconst [x, y] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconsole.log(add(x, y));\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "15 25",
+          "expectedOutput": "40",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "0 0",
+          "expectedOutput": "0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "99 1",
+          "expectedOutput": "100",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -472,36 +662,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 13,
-      "title": "JAVASCRIPT Stage 13",
-      "questName": "Quest 13",
-      "lessonContentMd": "## JAVASCRIPT Stage 13\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 13. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Objects & Properties",
+      "questName": "Object Record",
+      "topic": "Data Structures",
+      "concept": "JavaScript objects and property access",
+      "prerequisites": ["Define functions with parameter lists and return values"],
+      "learningObjectives": [
+        "Create objects with key-value pairs and access properties"
+      ],
+      "lessonContentMd": "## Objects in JavaScript\n\n```javascript\nconst user = { name: \"Alice\", score: 100 };\nconsole.log(user.name);\nconsole.log(user[\"score\"]);\n```",
+      "problemStatementMd": "## Object Record\n\nRead two space-separated values `name` (string) and `xp` (integer). Construct an object `{ name, xp }` and print `${obj.name}:${obj.xp}`.",
+      "constraints": "Name alphanumeric, xp 0 to 10000",
+      "inputFormat": "Space-separated name and xp",
+      "outputFormat": "<NAME>:<XP>",
+      "examples": [
+        {
+          "input": "Hero 500",
+          "output": "Hero:500",
+          "explanation": "Constructs object and formats property output."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst [name, xpStr] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\n// Construct object and print format\n",
+      "solutionCode": "const fs = require('fs');\nconst [name, xpStr] = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/);\nconst obj = { name, xp: parseInt(xpStr, 10) };\nconsole.log(`${obj.name}:${obj.xp}`);\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "Hero 500",
+          "expectedOutput": "Hero:500",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "Player1 0",
+          "expectedOutput": "Player1:0",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "Wizard 9999",
+          "expectedOutput": "Wizard:9999",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -511,36 +718,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 14,
-      "title": "JAVASCRIPT Stage 14",
-      "questName": "Quest 14",
-      "lessonContentMd": "## JAVASCRIPT Stage 14\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 14. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      "title": "Array Method Filter",
+      "questName": "Signal Filter",
+      "topic": "Functional Constructs",
+      "concept": "Filtering elements using Array.prototype.filter()",
+      "prerequisites": ["Mutate arrays using .push() and format output using .join(' ')"],
+      "learningObjectives": [
+        "Filter arrays using higher-order method .filter()"
+      ],
+      "lessonContentMd": "## Array Filter\n\n`.filter()` creates a new array containing elements that pass a test callback:\n\n```javascript\nconst nums = [1, 2, 3, 4];\nconst evens = nums.filter(x => x % 2 === 0);\nconsole.log(evens.join(\" \")); // \"2 4\"\n```",
+      "problemStatementMd": "## Signal Filter\n\nRead space-separated integers. Use `.filter()` to extract numbers greater than `10`. Print them joined by spaces.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Space-separated integers",
+      "outputFormat": "Space-separated integers > 10",
+      "examples": [
+        {
+          "input": "5 12 8 20 3",
+          "output": "12 20",
+          "explanation": "12 and 20 are > 10."
+        }
+      ],
+      "starterCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\n// Use .filter() and print space-separated\n",
+      "solutionCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconst filtered = nums.filter(x => x > 10);\nconsole.log(filtered.join(' '));\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "5 12 8 20 3",
+          "expectedOutput": "12 20",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "1 2 3",
+          "expectedOutput": "",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "11 10 9 12",
+          "expectedOutput": "11 12",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
@@ -550,2064 +774,53 @@
     {
       "levelSlug": "cadet",
       "stageNumber": 15,
-      "title": "JAVASCRIPT Stage 15",
-      "questName": "Quest 15",
-      "lessonContentMd": "## JAVASCRIPT Stage 15\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 15. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
+      "title": "Array Method Map",
+      "questName": "Signal Amplification",
+      "topic": "Functional Constructs",
+      "concept": "Transforming elements using Array.prototype.map()",
+      "prerequisites": ["Filter arrays using higher-order method .filter()"],
+      "learningObjectives": [
+        "Transform array elements using .map()"
+      ],
+      "lessonContentMd": "## Array Map\n\n`.map()` creates a new array by applying a callback to each element:\n\n```javascript\nconst nums = [1, 2, 3];\nconst doubled = nums.map(x => x * 2);\nconsole.log(doubled.join(\" \")); // \"2 4 6\"\n```",
+      "problemStatementMd": "## Signal Amplification\n\nRead space-separated integers. Use `.map()` to square each number (`x * x`) and print them joined by spaces.",
+      "constraints": "1 to 100 space-separated integers",
+      "inputFormat": "Space-separated integers",
+      "outputFormat": "Space-separated squared integers",
+      "examples": [
         {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
+          "input": "2 3 4",
+          "output": "4 9 16",
+          "explanation": "2^2=4, 3^2=9, 4^2=16."
         }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 16,
-      "title": "JAVASCRIPT Stage 16",
-      "questName": "Quest 16",
-      "lessonContentMd": "## JAVASCRIPT Stage 16\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 16. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
+      ],
+      "starterCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\n// Use .map() to square numbers and print space-separated\n",
+      "solutionCode": "const fs = require('fs');\nconst nums = fs.readFileSync(0, 'utf-8').trim().split(/\\s+/).map(Number);\nconst squared = nums.map(x => x * x);\nconsole.log(squared.join(' '));\n",
       "exerciseType": "coding-challenge",
       "languageId": "63",
-      "xpReward": 50,
+      "difficulty": "easy",
+      "xpReward": 30,
       "testCases": [
         {
           "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
+          "input": "2 3 4",
+          "expectedOutput": "4 9 16",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
+          "input": "0 5 10",
+          "expectedOutput": "0 25 100",
           "isHidden": false,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000
         },
         {
           "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 17,
-      "title": "JAVASCRIPT Stage 17",
-      "questName": "Quest 17",
-      "lessonContentMd": "## JAVASCRIPT Stage 17\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 17. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 18,
-      "title": "JAVASCRIPT Stage 18",
-      "questName": "Quest 18",
-      "lessonContentMd": "## JAVASCRIPT Stage 18\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 18. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 19,
-      "title": "JAVASCRIPT Stage 19",
-      "questName": "Quest 19",
-      "lessonContentMd": "## JAVASCRIPT Stage 19\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 19. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 20,
-      "title": "JAVASCRIPT Stage 20",
-      "questName": "Quest 20",
-      "lessonContentMd": "## JAVASCRIPT Stage 20\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 20. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 21,
-      "title": "JAVASCRIPT Stage 21",
-      "questName": "Quest 21",
-      "lessonContentMd": "## JAVASCRIPT Stage 21\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 21. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 22,
-      "title": "JAVASCRIPT Stage 22",
-      "questName": "Quest 22",
-      "lessonContentMd": "## JAVASCRIPT Stage 22\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 22. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 23,
-      "title": "JAVASCRIPT Stage 23",
-      "questName": "Quest 23",
-      "lessonContentMd": "## JAVASCRIPT Stage 23\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 23. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 24,
-      "title": "JAVASCRIPT Stage 24",
-      "questName": "Quest 24",
-      "lessonContentMd": "## JAVASCRIPT Stage 24\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 24. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 25,
-      "title": "JAVASCRIPT Stage 25",
-      "questName": "Quest 25",
-      "lessonContentMd": "## JAVASCRIPT Stage 25\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 25. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 26,
-      "title": "JAVASCRIPT Stage 26",
-      "questName": "Quest 26",
-      "lessonContentMd": "## JAVASCRIPT Stage 26\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 26. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 27,
-      "title": "JAVASCRIPT Stage 27",
-      "questName": "Quest 27",
-      "lessonContentMd": "## JAVASCRIPT Stage 27\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 27. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 28,
-      "title": "JAVASCRIPT Stage 28",
-      "questName": "Quest 28",
-      "lessonContentMd": "## JAVASCRIPT Stage 28\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 28. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 29,
-      "title": "JAVASCRIPT Stage 29",
-      "questName": "Quest 29",
-      "lessonContentMd": "## JAVASCRIPT Stage 29\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 29. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "soldier",
-      "stageNumber": 30,
-      "title": "JAVASCRIPT Stage 30",
-      "questName": "Quest 30",
-      "lessonContentMd": "## JAVASCRIPT Stage 30\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 30. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 31,
-      "title": "JAVASCRIPT Stage 31",
-      "questName": "Quest 31",
-      "lessonContentMd": "## JAVASCRIPT Stage 31\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 31. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 32,
-      "title": "JAVASCRIPT Stage 32",
-      "questName": "Quest 32",
-      "lessonContentMd": "## JAVASCRIPT Stage 32\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 32. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 33,
-      "title": "JAVASCRIPT Stage 33",
-      "questName": "Quest 33",
-      "lessonContentMd": "## JAVASCRIPT Stage 33\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 33. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 34,
-      "title": "JAVASCRIPT Stage 34",
-      "questName": "Quest 34",
-      "lessonContentMd": "## JAVASCRIPT Stage 34\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 34. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 35,
-      "title": "JAVASCRIPT Stage 35",
-      "questName": "Quest 35",
-      "lessonContentMd": "## JAVASCRIPT Stage 35\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 35. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 36,
-      "title": "JAVASCRIPT Stage 36",
-      "questName": "Quest 36",
-      "lessonContentMd": "## JAVASCRIPT Stage 36\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 36. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 37,
-      "title": "JAVASCRIPT Stage 37",
-      "questName": "Quest 37",
-      "lessonContentMd": "## JAVASCRIPT Stage 37\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 37. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 38,
-      "title": "JAVASCRIPT Stage 38",
-      "questName": "Quest 38",
-      "lessonContentMd": "## JAVASCRIPT Stage 38\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 38. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 39,
-      "title": "JAVASCRIPT Stage 39",
-      "questName": "Quest 39",
-      "lessonContentMd": "## JAVASCRIPT Stage 39\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 39. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 40,
-      "title": "JAVASCRIPT Stage 40",
-      "questName": "Quest 40",
-      "lessonContentMd": "## JAVASCRIPT Stage 40\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 40. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 41,
-      "title": "JAVASCRIPT Stage 41",
-      "questName": "Quest 41",
-      "lessonContentMd": "## JAVASCRIPT Stage 41\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 41. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 42,
-      "title": "JAVASCRIPT Stage 42",
-      "questName": "Quest 42",
-      "lessonContentMd": "## JAVASCRIPT Stage 42\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 42. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 43,
-      "title": "JAVASCRIPT Stage 43",
-      "questName": "Quest 43",
-      "lessonContentMd": "## JAVASCRIPT Stage 43\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 43. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 44,
-      "title": "JAVASCRIPT Stage 44",
-      "questName": "Quest 44",
-      "lessonContentMd": "## JAVASCRIPT Stage 44\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 44. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "knight",
-      "stageNumber": 45,
-      "title": "JAVASCRIPT Stage 45",
-      "questName": "Quest 45",
-      "lessonContentMd": "## JAVASCRIPT Stage 45\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 45. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 46,
-      "title": "JAVASCRIPT Stage 46",
-      "questName": "Quest 46",
-      "lessonContentMd": "## JAVASCRIPT Stage 46\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 46. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 47,
-      "title": "JAVASCRIPT Stage 47",
-      "questName": "Quest 47",
-      "lessonContentMd": "## JAVASCRIPT Stage 47\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 47. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 48,
-      "title": "JAVASCRIPT Stage 48",
-      "questName": "Quest 48",
-      "lessonContentMd": "## JAVASCRIPT Stage 48\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 48. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 49,
-      "title": "JAVASCRIPT Stage 49",
-      "questName": "Quest 49",
-      "lessonContentMd": "## JAVASCRIPT Stage 49\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 49. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 50,
-      "title": "JAVASCRIPT Stage 50",
-      "questName": "Quest 50",
-      "lessonContentMd": "## JAVASCRIPT Stage 50\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 50. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 51,
-      "title": "JAVASCRIPT Stage 51",
-      "questName": "Quest 51",
-      "lessonContentMd": "## JAVASCRIPT Stage 51\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 51. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 52,
-      "title": "JAVASCRIPT Stage 52",
-      "questName": "Quest 52",
-      "lessonContentMd": "## JAVASCRIPT Stage 52\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 52. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 53,
-      "title": "JAVASCRIPT Stage 53",
-      "questName": "Quest 53",
-      "lessonContentMd": "## JAVASCRIPT Stage 53\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 53. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 54,
-      "title": "JAVASCRIPT Stage 54",
-      "questName": "Quest 54",
-      "lessonContentMd": "## JAVASCRIPT Stage 54\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 54. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 55,
-      "title": "JAVASCRIPT Stage 55",
-      "questName": "Quest 55",
-      "lessonContentMd": "## JAVASCRIPT Stage 55\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 55. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 56,
-      "title": "JAVASCRIPT Stage 56",
-      "questName": "Quest 56",
-      "lessonContentMd": "## JAVASCRIPT Stage 56\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 56. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "wizard",
-      "stageNumber": 57,
-      "title": "JAVASCRIPT Stage 57",
-      "questName": "Quest 57",
-      "lessonContentMd": "## JAVASCRIPT Stage 57\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 57. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 58,
-      "title": "JAVASCRIPT Stage 58",
-      "questName": "Quest 58",
-      "lessonContentMd": "## JAVASCRIPT Stage 58\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 58. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 59,
-      "title": "JAVASCRIPT Stage 59",
-      "questName": "Quest 59",
-      "lessonContentMd": "## JAVASCRIPT Stage 59\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 59. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 60,
-      "title": "JAVASCRIPT Stage 60",
-      "questName": "Quest 60",
-      "lessonContentMd": "## JAVASCRIPT Stage 60\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 60. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 61,
-      "title": "JAVASCRIPT Stage 61",
-      "questName": "Quest 61",
-      "lessonContentMd": "## JAVASCRIPT Stage 61\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 61. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 62,
-      "title": "JAVASCRIPT Stage 62",
-      "questName": "Quest 62",
-      "lessonContentMd": "## JAVASCRIPT Stage 62\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 62. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 63,
-      "title": "JAVASCRIPT Stage 63",
-      "questName": "Quest 63",
-      "lessonContentMd": "## JAVASCRIPT Stage 63\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 63. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 64,
-      "title": "JAVASCRIPT Stage 64",
-      "questName": "Quest 64",
-      "lessonContentMd": "## JAVASCRIPT Stage 64\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 64. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 65,
-      "title": "JAVASCRIPT Stage 65",
-      "questName": "Quest 65",
-      "lessonContentMd": "## JAVASCRIPT Stage 65\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 65. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 66,
-      "title": "JAVASCRIPT Stage 66",
-      "questName": "Quest 66",
-      "lessonContentMd": "## JAVASCRIPT Stage 66\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 66. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
-          "isHidden": true,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        }
-      ]
-    },
-    {
-      "levelSlug": "archmage",
-      "stageNumber": 67,
-      "title": "JAVASCRIPT Stage 67",
-      "questName": "Quest 67",
-      "lessonContentMd": "## JAVASCRIPT Stage 67\n\nThis lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. This lesson introduces important concepts for this stage. \n\n```\n// example\n```",
-      "problemStatementMd": "Solve the problem for stage 67. Output the expected result.",
-      "starterCode": "// Write your code here\n",
-      "solutionCode": "// Solution\nprint('Hello')",
-      "exerciseType": "coding-challenge",
-      "languageId": "63",
-      "xpReward": 50,
-      "testCases": [
-        {
-          "testNumber": 1,
-          "input": "1",
-          "expectedOutput": "1",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 2,
-          "input": "2",
-          "expectedOutput": "2",
-          "isHidden": false,
-          "timeLimitMs": 5000,
-          "memoryLimitKb": 128000
-        },
-        {
-          "testNumber": 3,
-          "input": "3",
-          "expectedOutput": "3",
+          "input": "-3 3",
+          "expectedOutput": "9 9",
           "isHidden": true,
           "timeLimitMs": 5000,
           "memoryLimitKb": 128000

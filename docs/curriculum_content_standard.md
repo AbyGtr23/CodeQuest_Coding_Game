@@ -18,6 +18,16 @@ Tool
 
 ---
 
+## Single Source of Truth Architecture
+
+CodeQuest implements a **Single Source of Truth** for all curriculum data:
+
+- **Quest Mode** (`/quest/[toolSlug]/[level]/[stage]`) and **Curriculum Reference Mode** (`/curriculum/[toolSlug]/[level]/[stage]`) consume the **exact same underlying database records** from the `stages` and `test_cases` tables.
+- No duplicated stage files or separate static files exist.
+- When an author modifies or adds a stage in `data/seed/curriculum/<tool>.json` and runs `npm run seed:curriculum`, both modes instantly update synchronously.
+
+---
+
 ## Mandatory Structure
 
 ### Hierarchy
