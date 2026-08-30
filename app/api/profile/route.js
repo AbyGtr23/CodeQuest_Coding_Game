@@ -17,15 +17,30 @@ export async function GET() {
 
   const { data: tools } = await supabase
     .from('user_tools')
-    .select('id, progress_pct, status, tools(id, name, slug)')
+    .select('id, progress_pct, status, tools(id, name, slug, icon_emoji)')
     .eq('user_id', user.id);
 
   const formattedTools = tools?.map(t => ({
-    id: t.tools.id,
-    name: t.tools.name,
-    slug: t.tools.slug,
-    progress: t.progress_pct,
+    id: t.tools?.id,
+    name: t.tools?.name,
+    slug: t.tools?.slug,
+    icon_emoji: t.tools?.icon_emoji || '⚔️',
+    progress: t.progress_pct || 0,
+    status: t.status,
     mastered: t.status === 'mastered'
+  })) || [];
+
+  const { data: userBadges } = await supabase
+    .from('user_badges')
+    .select('earned_at, badges(id, name, description, icon_emoji)')
+    .eq('user_id', user.id);
+
+  const formattedBadges = userBadges?.map(ub => ({
+    id: ub.badges?.id,
+    name: ub.badges?.name,
+    description: ub.badges?.description,
+    icon_emoji: ub.badges?.icon_emoji || '🏅',
+    earned_at: ub.earned_at
   })) || [];
 
   const { count: totalSubmissions } = await supabase
@@ -40,8 +55,17 @@ export async function GET() {
     .eq('status', 'completed');
 
   return NextResponse.json({
-    user: profile,
+    user: profile || {
+      username: user.email?.split('@')[0] || 'Cadet',
+      email: user.email,
+      current_rank: 'Cadet',
+      total_xp: 0,
+      current_streak: 0,
+      longest_streak: 0,
+      created_at: new Date().toISOString()
+    },
     tools: formattedTools,
+    badges: formattedBadges,
     stats: {
       total_submissions: totalSubmissions || 0,
       completed_stages: completedStages || 0,

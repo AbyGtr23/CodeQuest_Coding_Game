@@ -30,18 +30,17 @@ export default function Signup() {
     if (error) {
       setError(error.message);
     } else {
-      // In a full implementation, you might want to wait for email verification
-      // Or automatically redirect if email confirmation is off
-      router.push('/dashboard');
+      router.push('/onboarding');
       router.refresh();
     }
   };
 
-  const handleGithubSignup = async () => {
+  const handleOAuthSignup = async (provider) => {
+    const redirectUrl = `${typeof window !== 'undefined' ? window.location.origin : (process.env.NEXT_PUBLIC_APP_URL || '')}/auth/callback`;
     await supabase.auth.signInWithOAuth({
-      provider: 'github',
+      provider,
       options: {
-        redirectTo: `${location.origin}/auth/callback`,
+        redirectTo: redirectUrl,
       }
     });
   };
@@ -94,8 +93,20 @@ export default function Signup() {
             </button>
           </form>
           <div className={styles.divider}>-- OR --</div>
-          <button onClick={handleGithubSignup} className={styles.githubButton}>
+          <button 
+            type="button" 
+            onClick={() => handleOAuthSignup('github')} 
+            className={styles.githubButton}
+          >
             [ REGISTER WITH GITHUB ]
+          </button>
+          <button 
+            type="button" 
+            onClick={() => handleOAuthSignup('google')} 
+            className={styles.googleButton || styles.githubButton}
+            style={{ marginTop: '0.5rem', background: '#1e293b', border: '1px solid #334155' }}
+          >
+            [ REGISTER WITH GOOGLE ]
           </button>
           <div className={styles.footer}>
             Already have an account? <Link href="/auth/login">Login here</Link>

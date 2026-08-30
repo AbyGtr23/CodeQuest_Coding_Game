@@ -1,0 +1,319 @@
+.container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: var(--bg-primary, #0a0a0c);
+}
+
+.terminal {
+  width: 100%;
+  max-width: 850px;
+  background: var(--bg-secondary, #121318);
+  border: 1px solid var(--border-color, #27272a);
+  border-radius: 8px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6), 0 0 16px rgba(0, 255, 102, 0.05);
+  overflow: hidden;
+  font-family: var(--font-mono, monospace);
+}
+
+.header {
+  background: var(--bg-tertiary, #1a1b23);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color, #27272a);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-secondary, #a1a1aa);
+  font-size: 0.85rem;
+}
+
+.stepIndicator {
+  color: var(--color-primary, #00ff66);
+  font-weight: bold;
+}
+
+.body {
+  padding: 2rem;
+}
+
+.title {
+  color: var(--color-primary, #00ff66);
+  margin-bottom: 0.5rem;
+  font-size: 1.35rem;
+}
+
+.subtitle {
+  color: var(--text-secondary, #a1a1aa);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.error {
+  background: rgba(239, 68, 68, 0.15);
+  border: 1px solid #ef4444;
+  color: #f87171;
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.profileCard {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color, #27272a);
+  border-radius: 6px;
+  margin-bottom: 1.5rem;
+}
+
+.avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary, #00ff66);
+  object-fit: cover;
+}
+
+.avatarPlaceholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--color-primary, #00ff66);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  background: rgba(0, 255, 102, 0.1);
+  color: var(--color-primary, #00ff66);
+}
+
+.profileDetails h3 {
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+.profileDetails p {
+  color: var(--text-secondary, #a1a1aa);
+  font-size: 0.85rem;
+}
+
+.gridRoles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.roleOption {
+  padding: 0.85rem 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color, #27272a);
+  border-radius: 6px;
+  color: #e4e4e7;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.roleOption:hover {
+  border-color: var(--color-primary, #00ff66);
+  background: rgba(0, 255, 102, 0.05);
+}
+
+.roleOptionSelected {
+  border-color: var(--color-primary, #00ff66);
+  background: rgba(0, 255, 102, 0.15);
+  color: #fff;
+  font-weight: bold;
+}
+
+.categoryGroup {
+  margin-bottom: 1.25rem;
+}
+
+.categoryTitle {
+  font-size: 0.85rem;
+  color: #38bdf8;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chipGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.chip {
+  padding: 0.5rem 0.85rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-color, #27272a);
+  color: #d4d4d8;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.chip:hover {
+  border-color: #38bdf8;
+}
+
+.chipSelected {
+  background: rgba(56, 189, 248, 0.15);
+  border-color: #38bdf8;
+  color: #fff;
+  font-weight: bold;
+}
+
+.recommendationsBox {
+  background: rgba(0, 255, 102, 0.03);
+  border: 1px solid rgba(0, 255, 102, 0.2);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.recTitle {
+  color: var(--color-primary, #00ff66);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+  font-weight: bold;
+}
+
+.recItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.recItem:last-child {
+  border-bottom: none;
+}
+
+.recReason {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #a1a1aa);
+}
+
+.weaponsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.weaponCard {
+  padding: 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-color, #27272a);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  position: relative;
+}
+
+.weaponCard:hover {
+  border-color: var(--color-primary, #00ff66);
+  transform: translateY(-2px);
+}
+
+.weaponCardSelected {
+  border-color: var(--color-primary, #00ff66);
+  background: rgba(0, 255, 102, 0.08);
+  box-shadow: 0 0 12px rgba(0, 255, 102, 0.2);
+}
+
+.weaponCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.weaponEmoji {
+  font-size: 1.75rem;
+}
+
+.weaponName {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.weaponDesc {
+  font-size: 0.8rem;
+  color: var(--text-secondary, #a1a1aa);
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.weaponMeta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #71717a;
+}
+
+.limitWarning {
+  font-size: 0.85rem;
+  color: #eab308;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  background: rgba(234, 179, 8, 0.1);
+  border: 1px solid rgba(234, 179, 8, 0.2);
+  border-radius: 4px;
+}
+
+.buttonRow {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btnPrimary {
+  background: var(--color-primary, #00ff66);
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.15s ease;
+}
+
+.btnPrimary:hover:not(:disabled) {
+  background: #00dd55;
+  box-shadow: 0 0 12px rgba(0, 255, 102, 0.4);
+}
+
+.btnPrimary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnSecondary {
+  background: transparent;
+  color: var(--text-secondary, #a1a1aa);
+  border: 1px solid var(--border-color, #27272a);
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.btnSecondary:hover {
+  color: #fff;
+  border-color: #71717a;
+}

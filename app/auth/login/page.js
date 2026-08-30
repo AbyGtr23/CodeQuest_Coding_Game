@@ -25,11 +25,12 @@ export default function Login() {
     }
   };
 
-  const handleGithubLogin = async () => {
+  const handleOAuthLogin = async (provider) => {
+    const redirectUrl = `${typeof window !== 'undefined' ? window.location.origin : (process.env.NEXT_PUBLIC_APP_URL || '')}/auth/callback`;
     await supabase.auth.signInWithOAuth({
-      provider: 'github',
+      provider,
       options: {
-        redirectTo: `${location.origin}/auth/callback`,
+        redirectTo: redirectUrl,
       }
     });
   };
@@ -71,8 +72,20 @@ export default function Login() {
             </button>
           </form>
           <div className={styles.divider}>-- OR --</div>
-          <button onClick={handleGithubLogin} className={styles.githubButton}>
+          <button 
+            type="button" 
+            onClick={() => handleOAuthLogin('github')} 
+            className={styles.githubButton}
+          >
             [ LOGIN WITH GITHUB ]
+          </button>
+          <button 
+            type="button" 
+            onClick={() => handleOAuthLogin('google')} 
+            className={styles.googleButton || styles.githubButton}
+            style={{ marginTop: '0.5rem', background: '#1e293b', border: '1px solid #334155' }}
+          >
+            [ LOGIN WITH GOOGLE ]
           </button>
           <div className={styles.footer}>
             No account? <Link href="/auth/signup">Sign up here</Link>

@@ -380,16 +380,28 @@ async function runTests() {
     assert(!m006.includes('total_xp') || m006.includes('-- App-managed') || m006.includes('NEVER'), 'Migration 006 does NOT overwrite total_xp');
   }
 
+  const m007Path = path.join(__dirname, '../supabase/migrations/007_user_onboarding.sql');
+  assert(fs.existsSync(m007Path), 'Migration 007_user_onboarding.sql exists');
+  if (fs.existsSync(m007Path)) {
+    const m007 = fs.readFileSync(m007Path, 'utf8');
+    assert(m007.includes('onboarding_completed'), 'Migration 007 adds onboarding_completed');
+    assert(m007.includes('it_role'), 'Migration 007 adds it_role');
+    assert(m007.includes('tech_stack'), 'Migration 007 adds tech_stack');
+  }
+
   // ============================================================
-  // GROUP 9: Curriculum UI Tests (file-based)
+  // GROUP 9: Curriculum & Onboarding UI Tests (file-based)
   // ============================================================
-  console.log('\n📖 GROUP 9: Curriculum UI Tests (file-based)\n');
+  console.log('\n📖 GROUP 9: Curriculum & Onboarding UI Tests (file-based)\n');
 
   const curriculumPages = [
     'app/curriculum/page.js',
     'app/curriculum/[toolSlug]/page.js',
     'app/curriculum/[toolSlug]/[level]/page.js',
     'app/curriculum/[toolSlug]/[level]/[stage]/page.js',
+    'app/onboarding/page.js',
+    'lib/taxonomy.js',
+    'app/api/user/onboarding/route.js',
   ];
 
   for (const p of curriculumPages) {
@@ -403,6 +415,10 @@ async function runTests() {
 
   const requiredDocs = [
     'docs/curriculum_content_standard.md',
+    'docs/production_release_checklist.md',
+    'docs/deployment.md',
+    'docs/development_setup.md',
+    'docs/troubleshooting.md',
     '.env.example',
     'README.md',
   ];

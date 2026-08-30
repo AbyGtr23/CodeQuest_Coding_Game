@@ -50,7 +50,11 @@ export default function TestResults({ results, loading, onNext }) {
     return (
       <div className={styles.container}>
         <h3 className={styles.title}>Submission Results</h3>
-        {isSuccess && <div className={styles.successMessage}>All tests passed!</div>}
+        {isSuccess && (
+          <div className={styles.successMessage}>
+            All tests passed! {results.xpAwarded > 0 ? `+${results.xpAwarded} XP Earned!` : '(Previously completed: +0 XP)'}
+          </div>
+        )}
         <div className={styles.resultsList}>
           {results.results?.map((test, idx) => (
             <div key={idx} className={`${styles.testCase} ${test.passed ? styles.passed : styles.failed}`}>

@@ -1,11 +1,13 @@
 'use client'
-import { createContext, useState, useEffect, useMemo } from 'react';
+import { createContext, useState, useEffect, useMemo, useCallback } from 'react';
 import { createBrowserClient } from '@supabase/ssr';
 
 export const AuthContext = createContext({
   user: null,
   profile: null,
+  onboardingCompleted: false,
   loading: true,
+  refreshProfile: async () => {},
   signOut: async () => {},
 });
 
@@ -23,6 +25,36 @@ export function AuthProvider({ children }) {
     return createBrowserClient(supabaseUrl, supabaseKey);
   }, [supabaseUrl, supabaseKey, hasCredentials]);
 
+  const fetchProfileWithRetry = useCallback(async (userId) => {
+    if (!supabase) return null;
+    let retryCount = 0;
+    let userProfile = null;
+    while (retryCount < 3 && !userProfile) {
+      try {
+        const { data } = await supabase
+          .from('users')
+          .select('*')
+          .eq('id', userId)
+          .single();
+        userProfile = data;
+      } catch (err) {
+        // Continue to retry
+      }
+      if (!userProfile) {
+        retryCount++;
+        if (retryCount < 3) await new Promise(r => setTimeout(r, 500));
+      }
+    }
+    return userProfile;
+  }, [supabase]);
+
+  const refreshProfile = useCallback(async () => {
+    if (user?.id) {
+      const p = await fetchProfileWithRetry(user.id);
+      if (p) setProfile(p);
+    }
+  }, [user, fetchProfileWithRetry]);
+
   useEffect(() => {
     if (!supabase) {
       setLoading(false);
@@ -30,24 +62,6 @@ export function AuthProvider({ children }) {
     }
 
     let mounted = true;
-
-    async function fetchProfileWithRetry(userId) {
-      let retryCount = 0;
-      let userProfile = null;
-      while (retryCount < 3 && !userProfile) {
-        const { data } = await supabase
-          .from('users')
-          .select('*')
-          .eq('id', userId)
-          .single();
-        userProfile = data;
-        if (!userProfile) {
-          retryCount++;
-          if (retryCount < 3) await new Promise(r => setTimeout(r, 500));
-        }
-      }
-      return userProfile;
-    }
 
     async function fetchSession() {
       try {
@@ -69,28 +83,34 @@ export function AuthProvider({ children }) {
       if (session?.user) {
         setUser(session.user);
         const userProfile = await fetchProfileWithRetry(session.user.id);
-        setProfile(userProfile);
+        if (mounted) setProfile(userProfile);
       } else {
-        setUser(null);
-        setProfile(null);
+        if (mounted) {
+          setUser(null);
+          setProfile(null);
+        }
       }
-      setLoading(false);
+      if (mounted) setLoading(false);
     });
 
     return () => {
       mounted = false;
       subscription.unsubscribe();
     };
-  }, [supabase]);
+  }, [supabase, fetchProfileWithRetry]);
 
   const signOut = async () => {
     if (supabase) {
+      setUser(null);
+      setProfile(null);
       await supabase.auth.signOut();
     }
   };
 
+  const onboardingCompleted = profile?.onboarding_completed ?? false;
+
   return (
-    <AuthContext.Provider value={{ user, profile, loading, signOut }}>
+    <AuthContext.Provider value={{ user, profile, onboardingCompleted, loading, refreshProfile, signOut }}>
       {children}
     </AuthContext.Provider>
   );

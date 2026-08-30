@@ -2,7 +2,8 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@/lib/supabase/server';
 
 export async function GET(request, { params }) {
-  const { toolSlug, level: levelSlug, stage: stageNumStr } = params;
+  const resolvedParams = await params;
+  const { toolSlug, level: levelSlug, stage: stageNumStr } = resolvedParams;
   const stageNumber = parseInt(stageNumStr);
   const supabase = await createClient();
   const { data: { user } } = await supabase.auth.getUser();
